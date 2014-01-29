@@ -1,0 +1,35 @@
+.page_in_origin {
+    position: absolute;
+    right: 0%;
+    margin-top: 0;
+}
+
+/* Slide Left */
+.page_before_slide_left {
+    position: absolute;
+    right: -100%;
+    margin-top: 0;
+}
+.slide_left {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-left: -100% !important;
+}
+
+/* Slide Right */
+.page_before_slide_right {
+    position: absolute;
+    right: 100%;
+    margin-top: 0;
+}
+.slide_right {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-left: 100% !important;
+}

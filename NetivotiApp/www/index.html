@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS Includes -->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/titles.css" />
+        <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+        <link rel="stylesheet" type="text/css" href="css/page_manager_style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsiveslides.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <title>Netivoti</title>
+    </head>
+    <body ontouchstart="">
+    <div id="app_container">
+
+    </div>
+    </body>
+    <!-- JS Includes -->
+
+    <script  type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script  type="text/javascript" src="js/fastclick.js"></script>
+    <script  type="text/javascript" src="js/doT.js"></script>
+    <script  type="text/javascript" src="js/responsiveslides.js"></script>
+    <script  type="text/javascript" src="utils/pages_manager.js"></script>
+    <script  type="text/javascript" src="utils/views_factory.js"></script>
+    <script  type="text/javascript" src="pages/main_page.js"></script>
+    <script  type="text/javascript" src="pages/articles_page.js"></script>
+    <script  type="text/javascript" src="pages/business_page.js"></script>
+    <script  type="text/javascript" src="utils/app.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks"
+            });
+        });
+    </script>
+</html>

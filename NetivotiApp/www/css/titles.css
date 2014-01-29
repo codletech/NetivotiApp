@@ -1,0 +1,48 @@
+.title1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.nav_bar_back
+{
+    margin: 0;
+    background: #252425;
+    padding: 1px 0px;
+}
+
+.title_bar_back
+{
+    background: #657596;
+    display: inline-block;
+    width: 100%;
+}
+
+.news_title_class
+{
+    text-align: right;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.article_wrap
+{
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    width: 100%;
+}
+
+.cont_image
+{
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-left: 8px;
+}
+
+.articles_main_title
+{
+    margin: 0;
+    font-size: 20px;
+}

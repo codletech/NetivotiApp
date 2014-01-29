@@ -1,0 +1,13 @@
+.button1 {
+    display: inline-block;
+    background: #679672;
+    padding: 8px 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-shadow: 1px 1px 1px #727272;
+    cursor: pointer;
+}
+.button1:active {
+    background: #4D7A57;
+}
