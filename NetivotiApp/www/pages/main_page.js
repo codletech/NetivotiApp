@@ -61,7 +61,7 @@ var mainPageContentArr = [];
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange=function()
     {
-        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        if (xmlhttp.readyState==4)
         {
             $.each( JSON.parse(xmlhttp.responseText), function( key, val ) {
                 $( "#news_row" ).after(
