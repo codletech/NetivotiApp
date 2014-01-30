@@ -28,7 +28,8 @@ cPages = {
     addPage: function(pageName,pageContent) {
         //Create new page.
         this.pages[pageName] = {
-            content:        "<div id='page_"+pageName+"' style='width:100%;display:inline-block;translate3d:(0,0,0);'>"+pageContent+'</div>',
+            page_id: "page_"+pageName,
+            content:        "<div id='page_"+pageName+"' style='width:"+ "100%"+";display:inline-block;translate3d:(0,0,0);'>"+pageContent+'</div>',
             vars:  {}
         }
     },
@@ -77,24 +78,42 @@ cPages = {
             }
 
             container.style.position = "relative";
-            //Add to container.
-            container.innerHTML += this.pages[toPage].content;
+
             var toPageDiv = document.getElementById('page_'+toPage);
+            //Add to container.
+            if (!toPageDiv) {
+                container.innerHTML += this.pages[toPage].content;
+                toPageDiv = document.getElementById('page_'+toPage);
+            }
+
+            toPageDiv.style.display = "inline-block";
+
+
             //Move to the side.
             toPageDiv.className = toPageDiv.className + " "+cPages.directions_css_classes[direction].page_before_class;
             toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
 
             //Unbind all transition callbacks.
-            //$("#"+container.id).unbind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd");
+            $("#"+container.id).unbind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd");
             //Bind transition end callback.
             $("#"+container.id).bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-                toPageDiv.className =  toPageDiv.className.replace(cPages.directions_css_classes[direction].page_before_class,"page_in_origin");
+                toPageDiv.className =  toPageDiv.className.replace(cPages.directions_css_classes[direction].page_before_class,"");
                 container.className =  container.className.replace(cPages.directions_css_classes[direction].container_class,"");
-                container.innerHTML = cPages.pages[toPage].content;
+                //container.innerHTML = cPages.pages[toPage].content;
+                for (var page in cPages.pages) {
+                    //alert(toPage);
+                    //alert(page);
+                    if (page != toPage){
+                        var toHidePage = document.getElementById(cPages.pages[page].page_id);
+                        if (toHidePage!=null && toHidePage!=undefined){
+                            toHidePage.style.display = "none";
+                        }
+                    }
+                }
             });
             //Start Transition.
             container.className = container.className + " "+this.directions_css_classes[direction].container_class;
-
+            container.clientHeight; //Force layout refresh. IMPORTANT!!!
         }
         else {
             console.error("moveToPage Error: page "+toPage+" doesn't exist.");
