@@ -113,8 +113,9 @@ cPages = {
             });
             //Start Transition.
             container.className = container.className + " "+this.directions_css_classes[direction].container_class;
-            container.clientHeight; //Force layout refresh. IMPORTANT!!!
-            toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
+            //container.clientHeight; //Force layout refresh. IMPORTANT!!!
+            //toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
+
         }
         else {
             console.error("moveToPage Error: page "+toPage+" doesn't exist.");
