@@ -88,7 +88,7 @@ var mainPageContentArr = [];
         content: viewsFactory.title({
             id: "galleries",
             title: "גלריות",
-            cssClasses: "galleries_title_class"
+            cssClasses: "news_title_class"
         })
     }),
 
@@ -189,6 +189,44 @@ var mainPageContentArr = [];
 })();
 
 /*
+ =============================== galleries injection =============================
+ Anonymous function to inject the galleries records into them curresponding div
+ TODO - find a proper design to this function
+ ============================================================================
+ */
+(function() {
+    // api address
+    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=9&numOfPosts=4";
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function()
+    {
+        // console.log("log: in magazine - status"+ xmlhttp.status+" and readystate: "+xmlhttp.readyState);
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            entered = true;
+            //parse the response to json
+            var jsonAfterParse = JSON.parse(xmlhttp.responseText);
+            // for each record - inject html after the "news_row" div
+            $.each( jsonAfterParse , function( key, val ) {
+                $( "#galleries_container" ).append(
+                    viewsFactory.article_row({
+                        cssClasses: "article_wrap",
+                        imgSrc: val.logo,
+                        imgClass: "cont_image",
+                        titleClass: "articles_main_title",
+                        mainTitle: val.name,
+                        descriptionClass: "main_article_description",
+                        description: val.excerpt
+                    }));
+            });
+        }
+    }
+    // open the connection using get method and send it
+    xmlhttp.open("GET",netivotiAPI,true);
+    xmlhttp.send();
+})();
+
+/*
  =============================== slider injection =============================
  Anonymous function to inject the slider records into them curresponding div
  TODO - find a proper design to this function
@@ -215,6 +253,7 @@ var mainPageContentArr = [];
                         imgDesc: val.name
                     }));
             });
+            /*
             $(function () {
                 $("#slider4").responsiveSlides({
                     auto: true,
@@ -223,6 +262,15 @@ var mainPageContentArr = [];
                     speed: 500,
                     namespace: "callbacks"
                 });
+            });
+            */
+            $("#slider4").responsiveSlides({
+                auto: false,
+                pager: true,
+                nav: true,
+                speed: 500,
+                maxwidth: 800,
+                namespace: "centered-btns"
             });
         }
     }
