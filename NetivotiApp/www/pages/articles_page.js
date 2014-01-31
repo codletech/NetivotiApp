@@ -9,6 +9,6 @@ var article_page = {
             '</div>' +
             '<div class="button1" onclick="cPages.moveBack(app.container)">חזור</div>';
         cPages.addPage("single_article_page",articlesPageContent);
-        cPages.moveToPage(app.container,"single_article_page",cPages.directions.right);
+        cPages.moveToPage(app.container,"single_article_page",cPages.directions.left);
     }
 }
