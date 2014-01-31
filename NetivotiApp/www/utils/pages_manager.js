@@ -18,7 +18,7 @@ cPages = {
             page_before_class:"page_before_slide_left"
         }
     },
-    moveBackDirection: "right",
+    moveBackDirection: "left",
 
     /**
      * Add new page to the page manager.
