@@ -41,6 +41,11 @@ cPages = {
     removePage: function(pageName) {
         //Check if exist.
         if (pageName in this.pages) {
+            var toDeletePage = document.getElementById(this.pages[pageName].page_id);
+            //Add to container.
+            if (toDeletePage) {
+                toDeletePage.parentNode.removeChild(toDeletePage);
+            }
             //Deletes content.
             delete this.pages[pageName];
         }
@@ -61,7 +66,7 @@ cPages = {
      * @param toPage
      * @param direction
      */
-    moveToPage: function(container,toPage,direction) {
+    moveToPage: function(container,toPage,direction,onFinish) {
         if (toPage in this.pages) {
             //Push to stack history.
             this.historyStack.push(toPage);
@@ -110,11 +115,14 @@ cPages = {
                         }
                     }
                 }
+                if (onFinish) {
+                    onFinish();
+                }
             });
             //Start Transition.
             container.className = container.className+ " "+this.directions_css_classes[direction].container_class;
-            //container.clientHeight; //Force layout refresh. IMPORTANT!!!
-            //toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
+            container.clientHeight; //Force layout refresh. IMPORTANT!!!
+            toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
 
         }
         else {
@@ -124,9 +132,9 @@ cPages = {
 
     moveBack: function(container) {
         //Remove last page from the history.
-        this.historyStack.pop();
+        var toDelete = this.historyStack.pop();
         var page = this.historyStack.pop();
-        this.moveToPage(container,page,this.moveBackDirection);
+        this.moveToPage(container,page,this.moveBackDirection,function() {cPages.removePage(toDelete);});
     }
 
 
