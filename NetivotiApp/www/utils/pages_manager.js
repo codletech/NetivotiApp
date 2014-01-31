@@ -123,6 +123,7 @@ cPages = {
             container.className = container.className+ " "+this.directions_css_classes[direction].container_class;
             container.clientHeight; //Force layout refresh. IMPORTANT!!!
             toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
+            //toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
 
         }
         else {
