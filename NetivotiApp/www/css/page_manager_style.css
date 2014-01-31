@@ -25,7 +25,7 @@
 /* Slide Right */
 .page_before_slide_right {
     position: absolute;
-    left: -100%;
+    right: 100%;
     top: 0;
     margin-top: 0;
 }
