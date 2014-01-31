@@ -112,7 +112,7 @@ cPages = {
                 }
             });
             //Start Transition.
-            container.className = container.className + " "+this.directions_css_classes[direction].container_class;
+            container.className = container.className +" pages_container"+ " "+this.directions_css_classes[direction].container_class;
             //container.clientHeight; //Force layout refresh. IMPORTANT!!!
             //toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
 
