@@ -29,7 +29,7 @@ cPages = {
         //Create new page.
         this.pages[pageName] = {
             page_id: "page_"+pageName,
-            content:        "<div id='page_"+pageName+"' style='width:"+ "100%"+";display:inline-block;translate3d:(0,0,0);'>"+pageContent+'</div>',
+            content:        "<div class='gpu_accelerated' id='page_"+pageName+"' style='width:"+ "100%"+";display:inline-block;'>"+pageContent+'</div>',
             vars:  {}
         }
     },
@@ -112,7 +112,7 @@ cPages = {
                 }
             });
             //Start Transition.
-            container.className = container.className +" pages_container"+ " "+this.directions_css_classes[direction].container_class;
+            container.className = container.className+ " "+this.directions_css_classes[direction].container_class;
             //container.clientHeight; //Force layout refresh. IMPORTANT!!!
             //toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
 
