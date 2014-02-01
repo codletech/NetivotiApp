@@ -5,11 +5,15 @@ body {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    direction:rtl;
+    direction: rtl;
+    display: inline-block;
+}
+html {
+    height: 100%;
 }
 
 #app_container {
     height: 100%;
     width: 100%;
-
+    display: inline-block;
 }
