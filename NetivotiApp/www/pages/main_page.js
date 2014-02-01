@@ -10,8 +10,11 @@ var mainPageContent =
         div for the slider
         the slider content will be injected later
      */
-    '<div class="main_slider" id="netivoti_main_slider">'+
-        '<div class=\"callbacks_container\"> <ul class=\"rslides\" id=\"slider4\"> </ul></div>'+
+    '<div class="swipe" id="netivoti_main_slider">'+
+        '<div id="netivoti_main_slider_content" class="swipe-wrap">'+"<div>דביר</div>"+
+    "<div>הדר</div>"+
+"<div>נסיכה</div>"+' </div>'+
+
     '</div>'+
 
     /*
@@ -92,7 +95,7 @@ var mainPageContent =
                         mainTitle: val.name,
                         descriptionClass: "main_article_description",
                         description: val.excerpt,
-                        onClick: function(){ article_page.loadPage(val.id); }
+                        onClick:  "article_page.loadPage("+val.id+");"
                     }));
             });
         }
@@ -131,7 +134,7 @@ var mainPageContent =
                         mainTitle: val.name,
                         descriptionClass: "main_article_description",
                         description: val.excerpt,
-                        onClick: function(){ article_page.loadPage(val.id); }
+                        onClick:  "article_page.loadPage("+val.id+");"
                     }));
             });
         }
@@ -199,33 +202,26 @@ var mainPageContent =
             entered = true;
             //parse the response to json
             var jsonAfterParse = JSON.parse(xmlhttp.responseText);
+            var sliderData = "";
             // for each record - inject html after the "news_row" div
             $.each( jsonAfterParse, function( key, val ) {
-                $( "#slider4" ).append(
+                sliderData +=
                     viewsFactory.sliderRow({
                         imgLink: val.logo,
                         imgDesc: val.name
-                    }));
+                    });
             });
-            /*
-            $(function () {
-                $("#slider4").responsiveSlides({
-                    auto: true,
-                    pager: false,
-                    nav: false,
-                    speed: 500,
-                    namespace: "callbacks"
-                });
-            });
-            */
-            $("#slider4").responsiveSlides({
-                auto: true,
-                pager: true,
-                nav: true,
-                speed: 500,
-                maxwidth: 800,
-                namespace: "centered-btns"
-            });
+            var sliderContent = document.getElementById("netivoti_main_slider_content");
+            var slider = document.getElementById('netivoti_main_slider');
+
+            if (sliderContent && slider) {
+                //alert(slider.id);
+                sliderContent.innerHTML =sliderData;
+                sliderContent.clientHeight;
+                slider.clientHeight;
+                window.mainSliderSwipe = Swipe(document.getElementById('netivoti_main_slider'));
+            }
+
         }
     }
     // open the connection using get method and send it
@@ -234,67 +230,5 @@ var mainPageContent =
 })();
 
 
-
-/*
-(function() {
-    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=2";
-    $.getJSON( netivotiAPI, function( json ) {
-        $.each( json, function( key, val ) {
-            $( "#news_row" ).after(
-                viewsFactory.article_row({
-                    cssClasses: "article_wrap",
-                    imgSrc: val.logo,
-                    imgClass: "cont_image",
-                    titleClass: "articles_main_title",
-                    mainTitle: val.name,
-                    descriptionClass: "main_article_description",
-                    description: val.excerpt
-                }));
-        });
-    });
-})();
-
-(function() {
-    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=3";
-    $.getJSON( netivotiAPI, function( json ) {
-        $.each( json, function( key, val ) {
-            $( "#magazine_row" ).after(
-                viewsFactory.article_row({
-                    cssClasses: "article_wrap",
-                    imgSrc: val.logo,
-                    imgClass: "cont_image",
-                    titleClass: "articles_main_title",
-                    mainTitle: val.name,
-                    descriptionClass: "main_article_description",
-                    description: val.excerpt
-                }));
-        });
-    });
-})();
-
-(function() {
-    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=2&imgWidth=800&imgHeight=400";
-    $.getJSON( netivotiAPI ,function( json ) {
-        $.each( json, function( key, val ) {
-            $( "#slider4" ).append(
-                viewsFactory.sliderRow({
-                    imgLink: val.logo,
-                    imgDesc: val.name
-                }));
-        });
-        $(function () {
-            $("#slider4").responsiveSlides({
-                auto: true,
-                pager: false,
-                nav: false,
-                speed: 500,
-                namespace: "callbacks"
-            });
-        });
-    });
-})();
-
-
-*/
-
 cPages.addPage("main",mainPageContent);
+

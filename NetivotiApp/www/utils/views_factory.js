@@ -19,7 +19,7 @@ viewsFactory = {
 
     article_row: doT.template("<div onclick='{{=it.onClick || \"\" }}' class='{{=it.cssClasses || \"\" }}'><img src='{{=it.imgSrc || \"\" }}' class='{{=it.imgClass || \"\" }}'> <h3 class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</h3> <div class='{{=it.descriptionClass || \"\" }}'>{{=it.description || \"\" }}</div></div> "),
 
-    sliderRow: doT.template("<li> <img src='{{=it.imgLink || \"\" }}'> <p class=\"caption\">{{=it.imgDesc || \"\" }}</p> </li> ")
+    sliderRow: doT.template("<div> <img src='{{=it.imgLink || \"\" }}'></div> ")
 
 
 }
