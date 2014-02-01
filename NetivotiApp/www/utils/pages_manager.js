@@ -69,6 +69,11 @@ cPages = {
      */
     moveToPage: function(container,toPage,direction,onFinish) {
         if (toPage in this.pages) {
+            if (cPages.isContainerLocked(container)) {
+                return;
+            }
+            cPages.lockContainer(container);
+
             //Push to stack history.
             this.historyStack.push(toPage);
             var lastPage = cPages.currentPage;
@@ -81,6 +86,7 @@ cPages = {
                 container.innerHTML = this.pages[toPage].content;
                 this.firstLoad = false;
                 cPages.currentPage = toPage;
+                cPages.unlockContainer(container);
                 return;
             }
             //Replace current page.
@@ -113,10 +119,12 @@ cPages = {
 
 
             //Unbind all transition callbacks.
+            $("#"+toPageDiv.id).unbind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd");
             $("#"+lastPageDiv.id).unbind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd");
             //Bind transition end callback.
             $("#"+lastPageDiv.id).bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
                 //alert(lastPageDiv.id);
+                //alert(toPageDiv.id);
                 //alert(toPageDiv.id);
                 toPageDiv.className =  toPageDiv.className.replace(cPages.directions_css_classes[direction].page_before_class,"");
                 lastPageDiv.className =  lastPageDiv.className.replace(cPages.directions_css_classes[direction].container_class,"");
@@ -124,16 +132,27 @@ cPages = {
                 for (var page in cPages.pages) {
                     //alert(toPage);
                     //alert(page);
-                    if (page != toPage){
-                        var toHidePage = document.getElementById(cPages.pages[page].page_id);
-                        if (toHidePage!=null && toHidePage!=undefined){
-                            toHidePage.style.display = "none";
+                    //alert(toPage);
+                    var currentPage = document.getElementById(cPages.pages[page].page_id);
+                    if (currentPage) {
+                        for (var direction_class in cPages.directions_css_classes) {
+                            //alert(cPages.directions_css_classes[direction_class].container_class);
+                            //alert("Page: "+currentPage.id+" Class: "+cPages.directions_css_classes[direction_class].container_class);
+                            //document.getElementById(cPages.pages[page].page_id).className.replace(cPages.directions_css_classes[direction_class].container_class,"");
+                            //document.getElementById(cPages.pages[page].page_id).className.replace(cPages.directions_css_classes[direction_class].page_before_class,"");
+                            document.getElementById(cPages.pages[page].page_id).className = "gpu_accelerated pages_manager_page";
+
+                            //alert("Page: "+currentPage.id+" Class: "+currentPage.className);
+                        }
+                        if (page != toPage){
+                            currentPage.style.display = "none";
                         }
                     }
                 }
                 if (onFinish) {
                     onFinish();
                 }
+                cPages.unlockContainer(container);
             });
             //Start Transition.
             //alert(lastPageDiv.id);
@@ -151,12 +170,24 @@ cPages = {
     },
 
     moveBack: function(container) {
+        if (cPages.isContainerLocked(container)) {
+            return;
+        }
         //Remove last page from the history.
         var toDelete = this.historyStack.pop();
         var page = this.historyStack.pop();
         this.moveToPage(container,page,this.moveBackDirection,function() {cPages.removePage(toDelete);});
+    },
+
+    lockContainer: function(container) {
+        container.pagesManageIsLocked = true;
+    },
+
+    unlockContainer: function(container) {
+        container.pagesManageIsLocked = false;
+    },
+
+    isContainerLocked: function(container) {
+        return container.pagesManageIsLocked;
     }
-
-
-
 }
