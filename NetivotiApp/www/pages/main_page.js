@@ -186,7 +186,7 @@ var mainPageContent =
  TODO - find a proper design to this function
  ============================================================================
  */
-
+/*
 (function() {
     // api address
     var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=8&numOfPosts=4&imgWidth=800&imgHeight=400";
@@ -207,17 +207,7 @@ var mainPageContent =
                         imgDesc: val.name
                     }));
             });
-            /*
-            $(function () {
-                $("#slider4").responsiveSlides({
-                    auto: true,
-                    pager: false,
-                    nav: false,
-                    speed: 500,
-                    namespace: "callbacks"
-                });
-            });
-            */
+
             $("#slider4").responsiveSlides({
                 auto: true,
                 pager: true,
@@ -232,7 +222,7 @@ var mainPageContent =
     xmlhttp.open("GET",netivotiAPI,true);
     xmlhttp.send();
 })();
-
+*/
 
 
 /*
