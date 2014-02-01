@@ -103,12 +103,13 @@ cPages = {
 
             toPageDiv.style.display = "inline-block";
             lastPageDiv = document.getElementById(cPages.pages[lastPage].page_id);
-
+            lastPageDiv.style.zIndex = "4";
+            toPageDiv.style.zIndex = "2";
 
             //Move to the side.
             toPageDiv.className = toPageDiv.className + " "+cPages.directions_css_classes[direction].page_before_class;
             toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
-            //lastPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
+            lastPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
 
 
             //Unbind all transition callbacks.
