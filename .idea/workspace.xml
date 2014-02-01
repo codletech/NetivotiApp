@@ -45,10 +45,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main_page.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main_page.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="42" selection-start="8708" selection-end="8708" vertical-scroll-proportion="0.0" vertical-offset="4510" max-vertical-offset="6216">
+            <state line="299" column="39" selection-start="11055" selection-end="11055" vertical-scroll-proportion="0.78752106" vertical-offset="5812" max-vertical-offset="6405">
               <folding />
             </state>
           </provider>
@@ -99,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pages_manager.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pages_manager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/pages_manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="16" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.539629" vertical-offset="1192" max-vertical-offset="4179">
+            <state line="72" column="16" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.0" vertical-offset="1381" max-vertical-offset="4179">
               <folding />
             </state>
           </provider>
@@ -126,11 +126,11 @@
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/views_factory.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/css/buttons.css" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/articles_page.js" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/index.html" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/css/page_manager_style.css" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/css/index.css" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/pages_manager.js" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
       </list>
     </option>
   </component>
@@ -513,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="42" selection-start="8708" selection-end="8708" vertical-scroll-proportion="0.0" vertical-offset="4510" max-vertical-offset="6216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/articles_page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="84" selection-start="514" selection-end="518" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
@@ -550,7 +543,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/pages_manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="16" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.539629" vertical-offset="1192" max-vertical-offset="4179">
+        <state line="72" column="16" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.0" vertical-offset="1381" max-vertical-offset="4179">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="299" column="39" selection-start="11055" selection-end="11055" vertical-scroll-proportion="0.78752106" vertical-offset="5812" max-vertical-offset="6405">
           <folding />
         </state>
       </provider>
