@@ -12,6 +12,7 @@ var mainPageContent =
      */
     '<div class="swiper-container" id="netivoti_main_slider">'+
         '<div id="netivoti_main_slider_content" class="swiper-wrapper"> </div>'+
+        '<div class="main_page_pagination"></div>' +
     '</div>'+
 
     /*
@@ -220,7 +221,9 @@ var mainPageContent =
                     mode:'horizontal',
                     loop: true,
                     autoplay: 3000,
-                    autoplayDisableOnInteraction: false
+                    autoplayDisableOnInteraction: false,
+                    pagination: '.main_page_pagination',
+                    paginationClickable: true
                     //etc..
                 });
                 //window.mainSliderSwipe = Swipe(document.getElementById('netivoti_main_slider'));
@@ -241,7 +244,9 @@ var mainInitFunction = function() {
             mode:'horizontal',
             loop: true,
             autoplay: 3000,
-            autoplayDisableOnInteraction: false
+            autoplayDisableOnInteraction: false,
+            pagination: '.main_page_pagination',
+            paginationClickable: true
             //etc..
         });
     }
