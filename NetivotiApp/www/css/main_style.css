@@ -1,6 +1,15 @@
 #netivoti_main_slider{
-    max-height: 150px;
+    max-height: 200px;
+    height: auto !important;
 }
 #netivoti_main_slider_content{
-    max-height: 150px;
+    max-height: 200px;
+    height: auto !important;
+}
+.main_photo_slide {
+    height: auto !important;
+}
+.responsive_image{
+    height:auto;
+    width:100%;
 }

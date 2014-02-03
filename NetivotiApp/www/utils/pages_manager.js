@@ -26,12 +26,13 @@ cPages = {
      * @param pageName: the name of the page.
      * @param pageContent: the content of the page.
      */
-    addPage: function(pageName,pageContent) {
+    addPage: function(pageName,pageContent,initFunction) {
         //Create new page.
         this.pages[pageName] = {
             page_id: "page_"+pageName,
             content:        "<div class='gpu_accelerated pages_manager_page' id='page_"+pageName+"' style='width:"+ "100%"+";display:inline-block;'>"+pageContent+'</div>',
-            vars:  {}
+            vars:  {},
+            init: initFunction
         }
     },
 
@@ -82,6 +83,7 @@ cPages = {
                 lastPageDiv = document.getElementById(cPages.pages[lastPage].page_id);
             }
 
+            //Quick show and return.
             if (this.firstLoad || !lastPageDiv) {
                 container.innerHTML = this.pages[toPage].content;
                 this.firstLoad = false;
@@ -151,6 +153,9 @@ cPages = {
                 }
                 if (onFinish) {
                     onFinish();
+                }
+                if (cPages.pages[toPage].init) {
+                    cPages.pages[toPage].init();
                 }
                 cPages.unlockContainer(container);
             });

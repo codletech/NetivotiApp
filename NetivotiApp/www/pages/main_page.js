@@ -10,11 +10,8 @@ var mainPageContent =
         div for the slider
         the slider content will be injected later
      */
-    '<div class="swipe" id="netivoti_main_slider">'+
-        '<div id="netivoti_main_slider_content" class="swipe-wrap">'+"<div>דביר</div>"+
-    "<div>הדר</div>"+
-"<div>נסיכה</div>"+' </div>'+
-
+    '<div class="swiper-container" id="netivoti_main_slider">'+
+        '<div id="netivoti_main_slider_content" class="swiper-wrapper"> </div>'+
     '</div>'+
 
     /*
@@ -216,10 +213,17 @@ var mainPageContent =
 
             if (sliderContent && slider) {
                 //alert(slider.id);
-                sliderContent.innerHTML =sliderData;
+                sliderContent.innerHTML = sliderData;
                 sliderContent.clientHeight;
-                slider.clientHeight;
-                window.mainSliderSwipe = Swipe(document.getElementById('netivoti_main_slider'));
+                var mySwiper = new Swiper(slider,{
+                    //Your options here:
+                    mode:'horizontal',
+                    loop: true,
+                    autoplay: 3000,
+                    autoplayDisableOnInteraction: false
+                    //etc..
+                });
+                //window.mainSliderSwipe = Swipe(document.getElementById('netivoti_main_slider'));
             }
 
         }
@@ -229,6 +233,18 @@ var mainPageContent =
     xmlhttp.send();
 })();
 
+var mainInitFunction = function() {
+    var slider = document.getElementById('netivoti_main_slider');
+    if (slider) {
+        var mySwiper = new Swiper(slider,{
+            //Your options here:
+            mode:'horizontal',
+            loop: true,
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false
+            //etc..
+        });
+    }
 
-cPages.addPage("main",mainPageContent);
-
+}
+cPages.addPage("main",mainPageContent,mainInitFunction);
