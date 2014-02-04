@@ -1,3 +1,9 @@
+#main_page {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow-y: hidden;
+}
 #netivoti_main_slider{
     max-height: 200px;
     height: auto !important;

@@ -6,14 +6,15 @@ var mainPageContent =
         Main title row - netivot online
      */
     '<div class="nav_bar_back"><div class="title1" id="main_title">נתיבות Online</div></div>'+
+    
     /*
         div for the slider
         the slider content will be injected later
      */
-    '<div class="swiper-container" id="netivoti_main_slider">'+
+    '<div style="display: inline-block;position: relative;height: 200px;width: 100%;"><div class="swiper-container" id="netivoti_main_slider">'+
         '<div id="netivoti_main_slider_content" class="swiper-wrapper"> </div>'+
         '<div class="main_page_pagination"></div>' +
-    '</div>'+
+    '</div></div>'+
 
     /*
         news title row
@@ -216,7 +217,10 @@ var mainPageContent =
                 //alert(slider.id);
                 sliderContent.innerHTML = sliderData;
                 sliderContent.clientHeight;
-                var mySwiper = new Swiper(slider,{
+                //Save the data
+                cPages.get("main").vars.sliderData = sliderData;
+
+                cPages.get("main").vars.mySwiper = new Swiper(slider,{
                     //Your options here:
                     mode:'horizontal',
                     loop: true,
@@ -226,7 +230,6 @@ var mainPageContent =
                     paginationClickable: true
                     //etc..
                 });
-                //window.mainSliderSwipe = Swipe(document.getElementById('netivoti_main_slider'));
             }
 
         }
@@ -238,8 +241,15 @@ var mainPageContent =
 
 var mainInitFunction = function() {
     var slider = document.getElementById('netivoti_main_slider');
-    if (slider) {
-        var mySwiper = new Swiper(slider,{
+    var sliderContent = document.getElementById("netivoti_main_slider_content");
+    if (slider && sliderContent) {
+        if (cPages.get("main").vars.sliderData) {
+            sliderContent.innerHTML = cPages.get("main").vars.sliderData;
+        }
+        else {
+            sliderContent.innerHTML = "";
+        }
+        cPages.get("main").vars.mySwiper = new Swiper(slider,{
             //Your options here:
             mode:'horizontal',
             loop: true,
@@ -249,6 +259,7 @@ var mainInitFunction = function() {
             paginationClickable: true
             //etc..
         });
+
     }
 
 }
