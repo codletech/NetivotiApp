@@ -3,19 +3,14 @@
  */
 var mainPageContent =
     /*
-        Main title row - netivot online
+        Header - netivot online
      */
-    '<div class="page_header">'+
-        '<div class="nav_bar_back"><div class="main_menu_button"></div><div class="title1" id="main_title">נתיבות <span style="color:#00a6ed;">Online</span></span></div></div>'+
-        '<div id="main_top_row_div"></div>'+
-    '</div>'+
-
-    '<div class="page_content">' +
+    viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>'} )+
     /*
         div for the slider
         the slider content will be injected later
      */
-    '<div style="display: inline-block;position: relative;height: 200px;width: 100%;"><div class="swiper-container" id="netivoti_main_slider">'+
+    '<div style="display: inline-block;position: relative;height: 200px;width: 100%;margin-top: 10px;"><div class="swiper-container" id="netivoti_main_slider">'+
         '<div id="netivoti_main_slider_content" class="swiper-wrapper"> </div>'+
         '<div style="display:none;" class="main_page_pagination"></div>' +
     '</div></div>'+
@@ -61,7 +56,7 @@ var mainPageContent =
      */
     '<div class="main_magazine_container main_article_rows_container" id="galleries_container"></div>'+
 
-    '</div>';
+    viewsFactory.footer;
 
 /*
     ------------------------ Html injection functions --------------------------

@@ -74,6 +74,12 @@
     height: 104px;
     overflow: hidden;
 }
+.article_wrap:active{
+    background: #3b3a3b;
+}
+.article_wrap:active .articles_main_title,.article_wrap:active .main_article_description {
+    color:#ffffff !important;
+}
 
 .cont_image
 {
@@ -115,8 +121,9 @@
     width: 105%;
     margin-right: -5px;
     margin-top: 10px;
-    margin-bottom: 20px;
-    border-top: 1px solid;
-    border-image: url(../img/main_top_border.png) 1 stretch repeat;
-    border-image-slice: 100% 0% 0% 0%;
+    margin-bottom: 0px;
+    height: 1px;
+    background-image: url(../img/main_top_border.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }

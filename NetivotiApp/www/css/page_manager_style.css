@@ -68,7 +68,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    height: 75px;
+    height: 60px;
     top: 0;
 }
 .page_content{
@@ -78,6 +78,6 @@
     left: 0;
     right: 0;
     overflow-y: auto;
-    top: 75px;
+    top: 60px;
     bottom: 0;
 }

@@ -19,7 +19,19 @@ viewsFactory = {
 
     article_row: doT.template("<div onclick='{{=it.onClick || \"\" }}' class='{{=it.cssClasses || \"\" }}'><img src='{{=it.imgSrc || \"\" }}' class='{{=it.imgClass || \"\" }}'> <div class='article_content_container'> <div class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</div> <div class='{{=it.descriptionClass || \"\" }}'>{{=it.description || \"\" }}</div></div></div> "),
 
-    sliderRow: doT.template("<div class='swiper-slide main_photo_slide' style='background: url(\"{{=it.imgLink || \"\" }}\");background-size: 100% auto;' > <!--<img class='responsive_image' src='{{=it.imgLink || \"\" }}'>--> <div class=\"mainSliderCaption\">{{=it.imgDesc || \"\" }}</div> </div> ")
+    sliderRow: doT.template("<div class='swiper-slide main_photo_slide' style='background: url(\"{{=it.imgLink || \"\" }}\");background-size: 100% auto;' > <!--<img class='responsive_image' src='{{=it.imgLink || \"\" }}'>--> <div class=\"mainSliderCaption\">{{=it.imgDesc || \"\" }}</div> </div> "),
 
+    header: function(options) {
+        var header_str = '<div class="page_header">'+
+            '<div class="nav_bar_back"><div class="main_menu_button" onclick="side_menu.showOrHide();"></div><div class="title1" id="main_title">'+(options.title || "" )+'</div></div>'+
+            (options.backButton ?
+                '<div class="back_button" onclick="cPages.moveBack(app.container)"></div>' : '') +
+            '<div id="main_top_row_div"></div>'+
+            '</div>'+
+            '<div class="page_content">';
+
+        return header_str;
+    },
+    footer: '</div>'
 
 }
