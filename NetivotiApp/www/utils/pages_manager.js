@@ -30,7 +30,7 @@ cPages = {
         //Create new page.
         this.pages[pageName] = {
             page_id: "page_"+pageName,
-            content:        "<div class='gpu_accelerated pages_manager_page' id='page_"+pageName+"' style='width:"+ "100%"+";display:inline-block;'>"+pageContent+'</div>',
+            content:        "<div class='gpu_accelerated pages_manager_page' id='page_"+pageName+"'><div class='page_all_container'>"+pageContent+'</div></div>',
             vars:  {},
             init: initFunction
         }

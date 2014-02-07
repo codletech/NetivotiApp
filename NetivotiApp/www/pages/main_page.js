@@ -5,15 +5,19 @@ var mainPageContent =
     /*
         Main title row - netivot online
      */
-    '<div class="nav_bar_back"><div class="title1" id="main_title">נתיבות Online</div></div>'+
-    
+    '<div class="page_header">'+
+        '<div class="nav_bar_back"><div class="main_menu_button"></div><div class="title1" id="main_title">נתיבות <span style="color:#00a6ed;">Online</span></span></div></div>'+
+        '<div id="main_top_row_div"></div>'+
+    '</div>'+
+
+    '<div class="page_content">' +
     /*
         div for the slider
         the slider content will be injected later
      */
     '<div style="display: inline-block;position: relative;height: 200px;width: 100%;"><div class="swiper-container" id="netivoti_main_slider">'+
         '<div id="netivoti_main_slider_content" class="swiper-wrapper"> </div>'+
-        '<div class="main_page_pagination"></div>' +
+        '<div style="display:none;" class="main_page_pagination"></div>' +
     '</div></div>'+
 
     /*
@@ -27,7 +31,7 @@ var mainPageContent =
      news container
      the news content will be injected here
      */
-    '<div class="main_news_container" id="news_container"></div>'+
+    '<div class="main_news_container main_article_rows_container" id="news_container"></div>'+
 
     /*
          magazine title row
@@ -41,7 +45,7 @@ var mainPageContent =
          magazine container
          the magazine content will be injected here
      */
-    '<div class="main_magazine_container" id="magazine_container"></div>'+
+    '<div class="main_magazine_container main_article_rows_container" id="magazine_container"></div>'+
 
     /*
      Galleries title row
@@ -55,7 +59,9 @@ var mainPageContent =
      galleries container
      the galleries content will be injected here
      */
-    '<div class="main_magazine_container" id="galleries_container"></div>';
+    '<div class="main_magazine_container main_article_rows_container" id="galleries_container"></div>'+
+
+    '</div>';
 
 /*
     ------------------------ Html injection functions --------------------------
@@ -191,7 +197,7 @@ var mainPageContent =
 
 (function() {
     // api address
-    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=8&numOfPosts=4&imgWidth=800&imgHeight=400";
+    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=8&numOfPosts=4&imgWidth=800&imgHeight=600";
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange=function()
     {
