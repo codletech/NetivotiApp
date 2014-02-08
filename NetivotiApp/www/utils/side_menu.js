@@ -25,6 +25,8 @@ var side_menu = {
         if (this.state == 'hidden') {
             document.getElementById('side_menu_container').className = document.getElementById('side_menu_container').className.replace('side_menu_hidden','side_menu_visible');
             document.getElementById('side_menu_whitespace').style.display="";
+            document.getElementById('side_menu_whitespace').style.width = window.innerWidth-45+"px";
+            document.getElementById('side_menu_whitespace').style.marginRight="45px";
             this.state = 'visible';
         }
         else {
