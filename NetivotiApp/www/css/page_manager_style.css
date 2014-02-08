@@ -73,11 +73,11 @@
 }
 .page_content{
     margin: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: absolute;
     left: 0;
     right: 0;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     top: 60px;
     bottom: 0;
 }

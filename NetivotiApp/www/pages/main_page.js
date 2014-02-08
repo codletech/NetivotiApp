@@ -5,7 +5,7 @@ var mainPageContent =
     /*
         Header - netivot online
      */
-    viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>'} )+
+    viewsFactory.header({content_scroll_id:'main_page_content_scroller',title: 'נתיבות <span style="color:#00a6ed;">Online</span>'} )+
     '<div id="main_page_content"></div>'+
     viewsFactory.footer;
 
@@ -90,6 +90,8 @@ var mainPageContent =
                     //etc..
                 });
             }
+            app.container.clientHeight;
+            var mainScroll = new IScroll('#main_page_content_scroller');
 
         }
     }

@@ -28,7 +28,7 @@ viewsFactory = {
                 '<div class="back_button" onclick="cPages.moveBack(app.container)"></div>' : '') +
             '<div id="main_top_row_div"></div>'+
             '</div>'+
-            '<div class="page_content">';
+            '<div class="page_content" id="'+(options.content_scroll_id? options.content_scroll_id:'')+'">';
 
         return header_str;
     },
