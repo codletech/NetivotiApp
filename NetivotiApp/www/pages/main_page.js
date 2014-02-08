@@ -6,56 +6,7 @@ var mainPageContent =
         Header - netivot online
      */
     viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>'} )+
-    /*
-        div for the slider
-        the slider content will be injected later
-     */
-    '<div class="main_slider_top_container"><div class="swipe" id="netivoti_main_slider">'+
-        '<div id="netivoti_main_slider_content" class="swipe-wrap"> </div>'+
-        '<div style="display:none;" class="main_page_pagination"></div>' +
-    '</div></div>'+
-
-    /*
-        news title row
-        the news content will be injected later
-     */
-    '<div class="title_bar_back" id="news_row">'+
-        '<div id="news_title" class="news_title_class">חדשות</div>'+
-    '</div>'+
-    /*
-     news container
-     the news content will be injected here
-     */
-    '<div class="main_news_container main_article_rows_container" id="news_container"></div>'+
-
-    /*
-         magazine title row
-         the magazine content will be injected later
-    */
-    '<div class="title_bar_back" id="magazine_row">'+
-        '<div id="magazine" class="news_title_class">המגזין</div>'+
-    '</div>'+
-
-    /*
-         magazine container
-         the magazine content will be injected here
-     */
-    '<div class="main_magazine_container main_article_rows_container" id="magazine_container"></div>'+
-
-    /*
-     Galleries title row
-     the galleries content will be injected later
-     */
-    '<div class="title_bar_back" id="galleries_row">'+
-        '<div id="galleries" class="news_title_class">גלריות</div>'+
-    '</div>'+
-
-    /*
-     galleries container
-     the galleries content will be injected here
-     */
-    '<div class="main_magazine_container main_article_rows_container" id="galleries_container"></div>'+
-
+    '<div id="main_page_content"></div>'+
     viewsFactory.footer;
 
 /*
@@ -71,155 +22,67 @@ var mainPageContent =
      TODO - find a proper design to this function
     ============================================================================
  */
-
 (function() {
     // api address
-    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=2&numOfPosts=4";
+    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_main_page_data.php";
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange=function()
     {
-        // debug : console.log("log: in news - status"+ xmlhttp.status+" and readystate: "+xmlhttp.readyState);
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
+            var cats_divs = {0:'',1:'',2:'',3:''};
+            var index = 0;
             //parse the response to json
-            var jsonAfterParse = JSON.parse(xmlhttp.responseText);
-            // for each record - inject html after the "news_row" div
-            $.each( jsonAfterParse , function( key, val ) {
-                // console.log(val.name);
-                $( "#news_container" ).append(
-                    viewsFactory.article_row({
-                        cssClasses: "article_wrap",
-                        imgSrc: val.logo,
-                        imgClass: "cont_image",
-                        titleClass: "articles_main_title",
-                        mainTitle: val.name,
-                        descriptionClass: "main_article_description",
-                        description: val.excerpt,
-                        onClick:  "article_page.loadPage("+val.id+");"
-                    }));
-            });
-        }
-    }
-    // open the connection using get method and send it
-    xmlhttp.open("GET",netivotiAPI,true);
-    xmlhttp.send();
-})();
+            var categories_data = JSON.parse(xmlhttp.responseText);
+            for (var key in categories_data) {
+                var category_data = categories_data[key];
+                for (var post_key in category_data) {
+                    var post = category_data[post_key];
 
-/*
- =============================== magazine injection =============================
- Anonymous function to inject the magazine records into them curresponding div
- TODO - find a proper design to this function
- ============================================================================
- */
-(function() {
-    // api address
-    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=3&numOfPosts=4";
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        // console.log("log: in magazine - status"+ xmlhttp.status+" and readystate: "+xmlhttp.readyState);
-        if (xmlhttp.readyState==4 && xmlhttp.status==200)
-        {
-            entered = true;
-            //parse the response to json
-            var jsonAfterParse = JSON.parse(xmlhttp.responseText);
-            // for each record - inject html after the "news_row" div
-            $.each( jsonAfterParse , function( key, val ) {
-                $( "#magazine_container" ).append(
-                    viewsFactory.article_row({
-                        cssClasses: "article_wrap",
-                        imgSrc: val.logo,
-                        imgClass: "cont_image",
-                        titleClass: "articles_main_title",
-                        mainTitle: val.name,
-                        descriptionClass: "main_article_description",
-                        description: val.excerpt,
-                        onClick:  "article_page.loadPage("+val.id+");"
-                    }));
-            });
-        }
-    }
-    // open the connection using get method and send it
-    xmlhttp.open("GET",netivotiAPI,true);
-    xmlhttp.send();
-})();
+                    if (index!=3) {
+                        cats_divs[index]+=
+                            viewsFactory.article_row({
+                                cssClasses: "article_wrap",
+                                imgSrc: post.logo,
+                                imgClass: "cont_image",
+                                titleClass: "articles_main_title",
+                                mainTitle: post.name,
+                                descriptionClass: "main_article_description",
+                                description: post.excerpt,
+                                onClick:  "article_page.loadPage("+post.id+");"
+                            });
+                    }
+                    else {
+                        cats_divs[index]+=
+                            viewsFactory.sliderRow({
+                                imgLink: post.logo,
+                                imgDesc: post.name
+                            });
+                    }
+                }
+                index++;
+            }
 
-/*
- =============================== galleries injection =============================
- Anonymous function to inject the galleries records into them curresponding div
- TODO - find a proper design to this function
- ============================================================================
- */
-(function() {
-    // api address
-    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=9&numOfPosts=4";
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        // console.log("log: in magazine - status"+ xmlhttp.status+" and readystate: "+xmlhttp.readyState);
-        if (xmlhttp.readyState==4 && xmlhttp.status==200)
-        {
-            entered = true;
-            //parse the response to json
-            var jsonAfterParse = JSON.parse(xmlhttp.responseText);
-            // for each record - inject html after the "news_row" div
-            $.each( jsonAfterParse , function( key, val ) {
-                $( "#galleries_container" ).append(
-                    viewsFactory.article_row({
-                        cssClasses: "article_wrap",
-                        imgSrc: val.logo,
-                        imgClass: "cont_image",
-                        titleClass: "articles_main_title",
-                        mainTitle: val.name,
-                        descriptionClass: "main_article_description",
-                        description: val.excerpt,
-                        onClick: "article_page.loadPage("+val.id+");"
-                    }));
-            });
-        }
-    }
-    // open the connection using get method and send it
-    xmlhttp.open("GET",netivotiAPI,true);
-    xmlhttp.send();
-})();
+            //Add the data to the view.
+            var main_data =
+                '<div class="main_slider_top_container"><div class="swipe" id="netivoti_main_slider">'+
+                    '<div id="netivoti_main_slider_content" class="swipe-wrap">'+cats_divs[3]+' </div>'+
+                '</div></div>'+
+                '<div id="news_row" class="news_title_class title_bar_back">חדשות</div>'+cats_divs[0]+
+                '<div id="magazine_row" class="news_title_class title_bar_back">המגזין</div>'+cats_divs[1]+
+                '<div id="galleries_row" class="news_title_class title_bar_back">גלריות</div>'+cats_divs[2];
 
-/*
- =============================== slider injection =============================
- Anonymous function to inject the slider records into them curresponding div
- TODO - find a proper design to this function
- ============================================================================
- */
-
-(function() {
-    // api address
-    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?category_id=8&numOfPosts=4&imgWidth=800&imgHeight=600";
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        console.log("tal log: in magazine - status"+ xmlhttp.status+" and readystate: "+xmlhttp.readyState);
-        if (xmlhttp.readyState==4 && xmlhttp.status==200)
-        {
-            entered = true;
-            //parse the response to json
-            var jsonAfterParse = JSON.parse(xmlhttp.responseText);
-            var sliderData = "";
-            // for each record - inject html after the "news_row" div
-            $.each( jsonAfterParse, function( key, val ) {
-                sliderData +=
-                    viewsFactory.sliderRow({
-                        imgLink: val.logo,
-                        imgDesc: val.name
-                    });
-            });
+            document.getElementById('main_page_content').innerHTML = main_data;
+            app.container.clientHeight;
             var sliderContent = document.getElementById("netivoti_main_slider_content");
             var slider = document.getElementById('netivoti_main_slider');
 
             if (sliderContent && slider) {
                 //alert(slider.id);
-                sliderContent.innerHTML = sliderData;
+                sliderContent.innerHTML = cats_divs[3];
                 sliderContent.clientHeight;
                 //Save the data
-                cPages.get("main").vars.sliderData = sliderData;
+                cPages.get("main").vars.sliderData = cats_divs[3];
 
                 cPages.get("main").vars.mySwiper = new Swipe(slider,{
                     //Your options here:
@@ -234,6 +97,7 @@ var mainPageContent =
     xmlhttp.open("GET",netivotiAPI,true);
     xmlhttp.send();
 })();
+
 
 var mainInitFunction = function() {
     var slider = document.getElementById('netivoti_main_slider');

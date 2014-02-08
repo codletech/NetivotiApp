@@ -28,6 +28,7 @@ var side_menu = {
             document.getElementById('side_menu_whitespace').style.width = window.innerWidth-45+"px";
             document.getElementById('side_menu_whitespace').style.marginRight="45px";
             this.state = 'visible';
+            app.container.clientHeight;
         }
         else {
             document.getElementById('side_menu_container').className = document.getElementById('side_menu_container').className.replace('side_menu_visible','side_menu_hidden');

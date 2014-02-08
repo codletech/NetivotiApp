@@ -100,7 +100,7 @@ cPages = {
                 direction = this.directions.right;
             }
 
-            container.style.position = "relative";
+            //container.style.position = "relative";
 
             var toPageDiv = document.getElementById('page_'+toPage);
             //Add to container.

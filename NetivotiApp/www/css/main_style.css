@@ -5,12 +5,8 @@
     overflow-y: hidden;
 }
 #netivoti_main_slider{
-    max-height: 200px;
-    height: auto !important;
 }
 #netivoti_main_slider_content{
-    max-height: 200px;
-    height: auto !important;
 }
 .main_photo_slide {
     height: 200px !important;
@@ -67,12 +63,15 @@
 
 .article_wrap
 {
+    background: #ffffff;
     border-bottom: 1px solid #C7C7C7;
     display: inline-block;
     width: 100%;
     position: relative;
     height: 104px;
-    overflow: hidden;
+    background-repeat: no-repeat !important;
+    background-position: 100% !important;
+    margin: 0;
 }
 .article_wrap:active{
     background: #008ed1;
@@ -86,9 +85,7 @@
 }
 
 .article_content_container {
-    position: absolute;
-    top: 2px;
-    right: 110px;
+    margin-right: 110px;
     overflow: hidden;
 }
 .articles_main_title
@@ -129,7 +126,6 @@
     transform: translate3d(0, 0, 0);*/
     display: inline-block;
     position: relative;
-    height: 200px;
     width: 100%;
     margin-top: 10px;
 }
