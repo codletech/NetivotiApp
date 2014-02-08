@@ -10,8 +10,8 @@
 }
 
 .gpu_accelerated {
-    /*-webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);*/
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 /* Slide Left */
 .page_before_slide_left {
