@@ -10,8 +10,8 @@ var mainPageContent =
         div for the slider
         the slider content will be injected later
      */
-    '<div style="display: inline-block;position: relative;height: 200px;width: 100%;margin-top: 10px;"><div class="swiper-container" id="netivoti_main_slider">'+
-        '<div id="netivoti_main_slider_content" class="swiper-wrapper"> </div>'+
+    '<div class="main_slider_top_container"><div class="swipe" id="netivoti_main_slider">'+
+        '<div id="netivoti_main_slider_content" class="swipe-wrap"> </div>'+
         '<div style="display:none;" class="main_page_pagination"></div>' +
     '</div></div>'+
 
@@ -221,14 +221,9 @@ var mainPageContent =
                 //Save the data
                 cPages.get("main").vars.sliderData = sliderData;
 
-                cPages.get("main").vars.mySwiper = new Swiper(slider,{
+                cPages.get("main").vars.mySwiper = new Swipe(slider,{
                     //Your options here:
-                    mode:'horizontal',
-                    loop: true,
-                    autoplay: 3000,
-                    autoplayDisableOnInteraction: false,
-                    pagination: '.main_page_pagination',
-                    paginationClickable: true
+
                     //etc..
                 });
             }
@@ -250,14 +245,9 @@ var mainInitFunction = function() {
         else {
             sliderContent.innerHTML = "";
         }
-        cPages.get("main").vars.mySwiper = new Swiper(slider,{
+        cPages.get("main").vars.mySwiper = new Swipe(slider,{
             //Your options here:
-            mode:'horizontal',
-            loop: true,
-            autoplay: 3000,
-            autoplayDisableOnInteraction: false,
-            pagination: '.main_page_pagination',
-            paginationClickable: true
+
             //etc..
         });
 

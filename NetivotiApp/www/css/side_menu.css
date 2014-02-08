@@ -17,6 +17,7 @@
     bottom: 0;
     right: -100%;
     opacity: 0;
+    margin-right: 45px;
 }
 
 .side_menu_hidden {
