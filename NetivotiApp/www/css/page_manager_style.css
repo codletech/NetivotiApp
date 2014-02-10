@@ -80,4 +80,6 @@
     /*overflow-y: auto;*/
     top: 60px;
     bottom: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
