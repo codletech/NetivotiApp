@@ -1,0 +1,36 @@
+#articles_page_main_content
+{
+    direction: rtl;
+    display: block;
+    text-align: right;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.line_sep
+{
+    height:2px;
+    background:#717171;
+    border-bottom:1px solid #313030;
+    width: 90%;
+    margin-bottom: 4px;
+}
+
+.articles_img
+{
+    float: right;
+    display: inline-block;
+    width: 35%;
+    margin-left: 3%;
+}
+
+.articles_inner_content
+{
+    font-weight: normal;
+    font-size: 16px;
+    color: #000000;
+    padding-right:10px;
+    width: 90%;
+}

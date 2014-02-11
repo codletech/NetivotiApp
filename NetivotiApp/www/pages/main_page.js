@@ -40,17 +40,34 @@ var mainPageContent =
                     var post = category_data[post_key];
 
                     if (index!=3) {
-                        cats_divs[index]+=
-                            viewsFactory.article_row({
-                                cssClasses: "article_wrap",
-                                imgSrc: post.logo,
-                                imgClass: "cont_image",
-                                titleClass: "articles_main_title",
-                                mainTitle: post.name,
-                                descriptionClass: "main_article_description",
-                                description: post.excerpt,
-                                onClick:  "article_page.loadPage("+post.id+");"
-                            });
+                        if(index==2)
+                        {
+                            cats_divs[index]+=
+                                viewsFactory.article_row({
+                                    cssClasses: "article_wrap",
+                                    imgSrc: post.logo,
+                                    imgClass: "cont_image",
+                                    titleClass: "articles_main_title",
+                                    mainTitle: post.name,
+                                    descriptionClass: "main_article_description",
+                                    description: post.excerpt,
+                                    onClick:  "gallery_page.loadPage("+post.id+");"
+                                });
+                        }
+                        else
+                        {
+                            cats_divs[index]+=
+                                viewsFactory.article_row({
+                                    cssClasses: "article_wrap",
+                                    imgSrc: post.logo,
+                                    imgClass: "cont_image",
+                                    titleClass: "articles_main_title",
+                                    mainTitle: post.name,
+                                    descriptionClass: "main_article_description",
+                                    description: post.excerpt,
+                                    onClick:  "article_page.loadPage("+post.id+");"
+                                });
+                        }
                     }
                     else {
                         cats_divs[index]+=
@@ -68,9 +85,9 @@ var mainPageContent =
                 '<div class="main_slider_top_container"><div class="swipe" id="netivoti_main_slider">'+
                     '<div id="netivoti_main_slider_content" class="swipe-wrap">'+cats_divs[3]+' </div>'+
                 '</div></div>'+
-                '<div id="news_row" class="news_title_class title_bar_back">חדשות</div>'+cats_divs[0]+
-                '<div id="magazine_row" class="news_title_class title_bar_back">המגזין</div>'+cats_divs[1]+
-                '<div id="galleries_row" class="news_title_class title_bar_back">גלריות</div>'+cats_divs[2];
+                '<div id="news_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(2);">חדשות</div>'+cats_divs[0]+
+                '<div id="magazine_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(3);">המגזין</div>'+cats_divs[1]+
+                '<div id="galleries_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(9);" >גלריות</div>'+cats_divs[2];
 
             document.getElementById('main_page_content').innerHTML = main_data;
             app.container.clientHeight;
