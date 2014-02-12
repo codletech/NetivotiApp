@@ -108,7 +108,7 @@ var mainPageContent =
                 });
             }
             app.container.clientHeight;
-            //var mainScroll = new IScroll('#main_page_content_scroller');
+            var mainScroll = new IScroll('#main_page_content_scroller');
 
         }
     }

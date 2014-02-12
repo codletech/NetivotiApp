@@ -3,7 +3,7 @@
  */
 var archive_page = {
     loadPage: function(cat_id) {
-        var articlesPageContent =
+        var archivePageContents =
             viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'articles_page_content',content_scroll_id:'articles_page_main_content', backButton:true, title_id: 'articles_page_title_id'})+
                 viewsFactory.footer;
         (function() {
@@ -42,7 +42,7 @@ var archive_page = {
             xmlhttp.open("GET",netivotiAPI,true);
             xmlhttp.send();
         })();
-        cPages.addPage("cur_archive_page",articlesPageContent);
+        cPages.addPage("cur_archive_page",archivePageContents);
         cPages.moveToPage(app.container,"cur_archive_page",cPages.directions.left);
     }
 }

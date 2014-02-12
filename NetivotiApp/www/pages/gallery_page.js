@@ -24,7 +24,7 @@ var gallery_page = {
                     var index;
                     for (index = 0; index < jsonAfterParse.images.length; ++index) {
                         var link = jsonAfterParse.images[index];
-                        bodyTextToAppend+='<img class="gallery_image" src="'+jsonAfterParse.images[index]+'" onclick="single_image_page.loadPage(\''+jsonAfterParse.images[index]+'\');"/>';
+                        bodyTextToAppend+='<img class="gallery_image" src="'+jsonAfterParse.images[index]+'" onclick="single_image_page.loadPage(\''+jsonAfterParse.images[index]+'\' , \''+jsonAfterParse.name+'\');"/>';
                     }
                     bodyTextToAppend+='</div>';
                     document.getElementById('gallery_page_main_content').innerHTML = bodyTextToAppend;
