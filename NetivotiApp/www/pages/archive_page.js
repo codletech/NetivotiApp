@@ -4,9 +4,10 @@
 var archive_page = {
     loadPage: function(cat_id) {
         var archivePageContents =
-            viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'page_content',content_scroll_id:'articles_page_main_content', backButton:true, title_id: 'articles_page_title_id'})+
+            viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'page_content',content_scroll_id:'articles_page_main_content'+cat_id, backButton:true, title_id: 'articles_page_title_id'+cat_id})+
                 viewsFactory.footer;
-        (function() {
+        var initFunction = (function() {
+
             // api address
             var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?archive_id="+cat_id;
             var xmlhttp = new XMLHttpRequest();
@@ -18,7 +19,7 @@ var archive_page = {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
                     console.log(jsonAfterParse.name);
-                    document.getElementById('articles_page_title_id').innerHTML = jsonAfterParse.name;
+                    document.getElementById('articles_page_title_id'+cat_id).innerHTML = jsonAfterParse.name;
                     var bodyTextToAppend='';
                     var articles = jsonAfterParse.articles;
                     for (var i=0;i<articles.length;i++)
@@ -36,14 +37,14 @@ var archive_page = {
                         });
                     }
 
-                    document.getElementById('articles_page_main_content').innerHTML = bodyTextToAppend;
+                    document.getElementById('articles_page_main_content'+cat_id).innerHTML = bodyTextToAppend;
                 }
             }
             // open the connection using get method and send it
             xmlhttp.open("GET",netivotiAPI,true);
             xmlhttp.send();
-        })();
-        cPages.addPage("cur_archive_page",archivePageContents);
-        cPages.moveToPage(app.container,"cur_archive_page",cPages.directions.left);
+        });
+        cPages.addPage("cur_archive_page"+cat_id,archivePageContents,initFunction);
+        cPages.moveToPage(app.container,"cur_archive_page"+cat_id,cPages.directions.left);
     }
 }

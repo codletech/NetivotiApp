@@ -26,13 +26,15 @@ cPages = {
      * @param pageName: the name of the page.
      * @param pageContent: the content of the page.
      */
-    addPage: function(pageName,pageContent,initFunction) {
+    addPage: function(pageName,pageContent,initFunction,refreshFunction) {
         //Create new page.
         this.pages[pageName] = {
             page_id: "page_"+pageName,
             content:        "<div class='gpu_accelerated pages_manager_page' id='page_"+pageName+"'><div class='page_all_container'>"+pageContent+'</div></div>',
             vars:  {},
-            init: initFunction
+            refresh: refreshFunction,
+            init: initFunction,
+            showed: false
         }
     },
 
@@ -165,8 +167,12 @@ cPages = {
                 if (onFinish) {
                     onFinish();
                 }
-                if (cPages.pages[toPage].init) {
+                if(cPages.pages[toPage].init && !cPages.pages[toPage].showed){
+                    cPages.pages[toPage].showed = true;
                     cPages.pages[toPage].init();
+                }
+                else if (cPages.pages[toPage].refresh) {
+                    cPages.pages[toPage].refresh();
                 }
                 cPages.unlockContainer(container);
             });

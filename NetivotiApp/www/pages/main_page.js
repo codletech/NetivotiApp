@@ -31,7 +31,7 @@ var mainPageContent =
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
             var cats_divs = {0:'',1:'',2:'',3:''};
-            cats_divs[2]+="<div class='galleries_row_wrap'><div style='width: 450px;'>";
+            cats_divs[2]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 450px;'>";
             var index = 0;
             //parse the response to json
             var categories_data = JSON.parse(xmlhttp.responseText);
@@ -111,6 +111,11 @@ var mainPageContent =
                 bounce:false,
                 scrollbars: true
             });
+            cPages.get("main").vars.galleriesScroll = new IScroll('#galleries_row_scroller',{
+                bounce:false,
+                scrollX:true
+            });
+
 
         }
     }
@@ -120,7 +125,7 @@ var mainPageContent =
 })();
 
 
-var mainInitFunction = function() {
+var mainRefreshFunction = function() {
     var slider = document.getElementById('netivoti_main_slider');
     var sliderContent = document.getElementById("netivoti_main_slider_content");
     if (slider && sliderContent) {
@@ -139,7 +144,11 @@ var mainInitFunction = function() {
             bounce:false,
             scrollbars: true
         });
+        cPages.get("main").vars.galleriesScroll = new IScroll('#galleries_row_scroller',{
+            bounce:false,
+            scrollX:true
+        });
     }
 
 }
-cPages.addPage("main",mainPageContent,mainInitFunction);
+cPages.addPage("main",mainPageContent,null,mainRefreshFunction);
