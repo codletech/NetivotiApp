@@ -51,12 +51,7 @@
     border-radius: 25px;
 }
 
-.menu_button:hover
-{
-    background: rgb(36, 36, 36);
-}
-
-.menu_button:link
+.menu_button:active
 {
     background: rgb(36, 36, 36);
 }
@@ -78,12 +73,7 @@
     border: 1px solid #969696;
 }
 
-.menu_sub_button:hover
-{
-    background: rgb(36, 36, 36);
-}
-
-.menu_sub_button:link
+.menu_sub_button:active
 {
     background: rgb(36, 36, 36);
 }

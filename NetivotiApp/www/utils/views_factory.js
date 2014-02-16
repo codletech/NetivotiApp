@@ -19,6 +19,8 @@ viewsFactory = {
 
     article_row: doT.template("<div onclick='{{=it.onClick || \"\" }}' class='{{=it.cssClasses || \"\" }}' style='background-image:url(\"{{=it.imgSrc || \"\" }}\")'><div class='article_content_container'> <div class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</div> <div class='{{=it.descriptionClass || \"\" }}'>{{=it.description || \"\" }}</div></div></div> "),
 
+    gallery_row: doT.template("<div onclick='{{=it.onClick || \"\" }}' class='{{=it.cssClasses || \"\" }}' style='background-image:url(\"{{=it.imgSrc || \"\" }}\")'><div class='gallery_content_container'> <div class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</div> </div></div> "),
+
     sliderRow: doT.template("<div class='swiper-slide main_photo_slide' style='background: url(\"{{=it.imgLink || \"\" }}\");background-size: 100% auto;' > <!--<img class='responsive_image' src='{{=it.imgLink || \"\" }}'>--> <div class=\"mainSliderCaption\">{{=it.imgDesc || \"\" }}</div> </div> "),
 
     header: function(options) {

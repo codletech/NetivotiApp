@@ -62,6 +62,16 @@ cPages = {
         return this.pages[pageName];
     },
 
+    insertPageToStack: function(toPage) {
+        for (var i=this.historyStack.length-1; i>=0; i--) {
+            if (this.historyStack[i] === toPage) {
+                this.historyStack.splice(i, 1);
+                // break;       //<-- Uncomment  if only the first term has to be removed
+            }
+        }
+        this.historyStack.push(toPage);
+    }
+    ,
     /**
      * move to page.
      * @param container
@@ -76,7 +86,8 @@ cPages = {
             cPages.lockContainer(container);
 
             //Push to stack history.
-            this.historyStack.push(toPage);
+            this.insertPageToStack(toPage);
+
             var lastPage = cPages.currentPage;
             var lastPageDiv = null;
             if (lastPage!="") {

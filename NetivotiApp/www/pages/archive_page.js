@@ -4,7 +4,7 @@
 var archive_page = {
     loadPage: function(cat_id) {
         var archivePageContents =
-            viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'articles_page_content',content_scroll_id:'articles_page_main_content', backButton:true, title_id: 'articles_page_title_id'})+
+            viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'page_content',content_scroll_id:'articles_page_main_content', backButton:true, title_id: 'articles_page_title_id'})+
                 viewsFactory.footer;
         (function() {
             // api address
@@ -18,7 +18,8 @@ var archive_page = {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
                     console.log(jsonAfterParse.name);
-                    var bodyTextToAppend='<div id="news_row" class="news_title_class title_bar_back">'+jsonAfterParse.name+'</div>';
+                    document.getElementById('articles_page_title_id').innerHTML = jsonAfterParse.name;
+                    var bodyTextToAppend='';
                     var articles = jsonAfterParse.articles;
                     for (var i=0;i<articles.length;i++)
                     {

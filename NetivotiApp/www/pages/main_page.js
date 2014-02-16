@@ -31,6 +31,7 @@ var mainPageContent =
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
             var cats_divs = {0:'',1:'',2:'',3:''};
+            cats_divs[2]+="<div class='galleries_row_wrap'><div style='width: 450px;'>";
             var index = 0;
             //parse the response to json
             var categories_data = JSON.parse(xmlhttp.responseText);
@@ -43,14 +44,12 @@ var mainPageContent =
                         if(index==2)
                         {
                             cats_divs[index]+=
-                                viewsFactory.article_row({
-                                    cssClasses: "article_wrap",
+                                viewsFactory.gallery_row({
+                                    cssClasses: "galleries_wrap",
                                     imgSrc: post.logo,
                                     imgClass: "cont_image",
                                     titleClass: "articles_main_title",
                                     mainTitle: post.name,
-                                    descriptionClass: "main_article_description",
-                                    description: post.excerpt,
                                     onClick:  "gallery_page.loadPage("+post.id+");"
                                 });
                         }
@@ -79,7 +78,7 @@ var mainPageContent =
                 }
                 index++;
             }
-
+            cats_divs[2]+="</div></div>";
             //Add the data to the view.
             var main_data =
                 '<div class="main_slider_top_container"><div class="swipe" id="netivoti_main_slider">'+
@@ -108,7 +107,7 @@ var mainPageContent =
                 });
             }
             app.container.clientHeight;
-            var mainScroll = new IScroll('#main_page_content_scroller',{
+            cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
                 bounce:false,
                 scrollbars: true
             });
@@ -136,7 +135,10 @@ var mainInitFunction = function() {
 
             //etc..
         });
-
+        cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
+            bounce:false,
+            scrollbars: true
+        });
     }
 
 }

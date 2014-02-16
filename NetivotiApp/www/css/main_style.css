@@ -72,9 +72,23 @@
     background-repeat: no-repeat !important;
     background-position: 100% !important;
     margin: 0;
+    padding: 0;
 }
 .article_wrap:active{
     background: #008ed1;
+}
+
+.galleries_wrap
+{
+    color: white;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-position: top;
+    margin: 10px;
+    height: 170px;
+    width: 90px ;
 }
 
 .cont_image
@@ -87,6 +101,19 @@
 .article_content_container {
     margin-right: 110px;
     overflow: hidden;
+}
+
+.gallery_content_container
+{
+    margin-top: 145px;
+}
+
+.galleries_row_wrap
+{
+    background: #464646;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 200px;
 }
 .articles_main_title
 {
