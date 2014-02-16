@@ -129,9 +129,9 @@ cPages = {
 
             //Move to the side.
             toPageDiv.className = toPageDiv.className + " "+cPages.directions_css_classes[direction].page_before_class;
-            toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
-            lastPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
-
+            //toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
+            //lastPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
+            app.container.offsetWidth;
 
             //Unbind all transition callbacks.
             $("#"+toPageDiv.id).unbind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd");
