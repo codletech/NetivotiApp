@@ -18,11 +18,12 @@ var article_page = {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
                     console.log(jsonAfterParse.name);
-                    var bodyTextToAppend='<div id="article_second_title">'+jsonAfterParse.name+'</div>'+
-                        '<div class="line_sep"></div>'+
+                    var bodyTextToAppend='<div style="margin-bottom:5px; font-size: 15px;font-weight: bold;border-bottom: 2px solid #3F436F;" id="article_second_title">'+jsonAfterParse.name+'</div>'+
                         '<div class="main_article_content"><img src="'+jsonAfterParse.logo+'" class="articles_img" />'+
                         '<div class="articles_inner_content">'+jsonAfterParse.content+'</div></div>';
                     document.getElementById('article_page_main_content').innerHTML = bodyTextToAppend;
+                    document.getElementById('articles_page_title_id').innerHTML = jsonAfterParse.name;
+                    document.getElementById('articles_page_title_id').style.fontSize = "16px";
                 }
             }
             // open the connection using get method and send it

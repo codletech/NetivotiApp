@@ -1,11 +1,11 @@
 #side_menu_container {
-    width:60%;
-    background: #444444;
+    width: 60%;
     z-index: 100000;
     position: absolute;
-    top:45px;
+    top: 45px;
     bottom: 0;
     right: -60%;
+    background-image: url(../img/side_menu_background.png);
 }
 #side_menu_whitespace {
     background: #aaaaaa;
@@ -34,49 +34,63 @@
 
 .menu_button
 {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     display: inline-block;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 15px;
     margin: 0;
-    margin-top: 3%;
-    margin-right: 3%;
-    background: rgb(109, 109, 109);
+    margin-top: 15px;
     line-height: 31px;
     text-align: center;
-    width: 80%;
-    padding-right: 8px;
-    border: 1px solid #969696;
-    border-radius: 25px;
+    width: 90%;
+    margin-right: 5%;
+    border-radius: 3px;
+    background: #727272; /* Old browsers */
+    background: -moz-linear-gradient(top,  #727272 2%, #565656 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#727272), color-stop(99%,#565656)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #727272 2%,#565656 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #727272 2%,#565656 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #727272 2%,#565656 99%); /* IE10+ */
+    background: linear-gradient(to bottom,  #727272 2%,#565656 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#727272', endColorstr='#565656',GradientType=0 ); /* IE6-9 */
+
 }
 
 .menu_button:active
 {
-    background: rgb(36, 36, 36);
+    background: #5b5b5b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #5b5b5b 2%, #444444 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#5b5b5b), color-stop(99%,#444444)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #5b5b5b 2%,#444444 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #5b5b5b 2%,#444444 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #5b5b5b 2%,#444444 99%); /* IE10+ */
+    background: linear-gradient(to bottom,  #5b5b5b 2%,#444444 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#444444',GradientType=0 ); /* IE6-9 */
 }
 
 .menu_sub_button
 {
+    padding-top: 1px;
+    padding-bottom: 1px;
     display: inline-block;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 13px;
     margin: 0;
-    margin-top: 3%;
-    margin-right: 3%;
-    background: rgb(109, 109, 109);
+    margin-top: 5px;
     line-height: 31px;
-    text-align: right;
-    width: 80%;
-    padding-right: 8px;
-    border: 1px solid #969696;
+    text-align: center;
+    width: 90%;
+    margin-right: 5%;
+    border-radius: 3px;
+    background: #222222;
 }
 
 .menu_sub_button:active
 {
-    background: rgb(36, 36, 36);
+    background: #111111; /* Old browsers */
 }
 
 .menu_hidden_container
