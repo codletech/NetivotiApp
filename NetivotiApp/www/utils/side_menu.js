@@ -39,6 +39,10 @@ var side_menu = {
     },
 
     showOrHide: function(onFinish) {
+        if (this.state == 'onHide') {
+            return;
+        }
+
         if (!this.content) {
             this.create();
             app.container.clientHeight;
@@ -56,16 +60,17 @@ var side_menu = {
             this.state = 'visible';
             app.container.clientHeight;
         }
-        else {
+        else if (this.state == 'visible'){
             document.getElementById('side_menu_container').className = document.getElementById('side_menu_container').className.replace('side_menu_visible','side_menu_hidden');
             $("#side_menu_container").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
                 document.getElementById('side_menu_container').style.display="none";
                 document.getElementById('side_menu_whitespace').style.display="none";
+                side_menu.state = 'hidden';
                 if (onFinish) {
                     onFinish();
                 }
             });
-            this.state = 'hidden';
+            this.state = 'onHide';
             if (cPages.pages[cPages.currentPage] && cPages.pages[cPages.currentPage].refresh) {
                 cPages.pages[cPages.currentPage].refresh();
             }
