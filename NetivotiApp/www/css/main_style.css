@@ -89,6 +89,7 @@
     margin: 10px;
     height: 170px;
     width: 90px ;
+    float: right;
 }
 
 .cont_image
@@ -113,7 +114,6 @@
     background: #464646;
     overflow-x: scroll;
     overflow-y: hidden;
-    height: 200px;
 }
 .articles_main_title
 {
