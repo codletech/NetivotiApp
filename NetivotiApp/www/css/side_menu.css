@@ -97,3 +97,46 @@
 {
     display: none;
 }
+
+#call_now_button
+{
+    background-color: rgb(52, 148, 52);
+    background-image: url('../img/contact.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.side_menu_contact_links
+{
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+
+#send_mail_button
+{
+    background-color: rgb(81, 118, 197);
+    background-image: url('../img/mail.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+#address_button
+{
+    background-color: rgb(148, 127, 204);
+    background-image: url('../img/location.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+#info_button
+{
+    background-color: rgb(184, 50, 50);
+    background-image: url('../img/i.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}

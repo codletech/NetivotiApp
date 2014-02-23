@@ -1,0 +1,29 @@
+
+.biz_cat_wrap
+{
+    background: #ffffff;
+    border-bottom: 1px solid #C7C7C7;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    height: 100px;
+    background-repeat: no-repeat !important;
+    background-position: 99% !important;
+    background-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+.biz_cat_wrap:active{
+    background-color: #008ed1;
+}
+
+.biz_cat_content_container
+{
+    margin: 40px 100px;
+}
+
+.biz_hidden_container
+{
+    display: none;
+    height: 152px;
+}
