@@ -41,7 +41,12 @@ var main_biz_categories = {
             // open the connection using get method and send it
             xmlhttp.open("GET",netivotiAPI,true);
             xmlhttp.send();
+
+
         });
+
+
+
         cPages.addPage("biz_categories_page",biz_cat_page_contents,biz_cats_initial_function);
         cPages.moveToPage(app.container,"biz_categories_page",cPages.directions.left);
     }

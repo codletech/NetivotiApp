@@ -9,6 +9,11 @@ function showHideSubMenu(id)
         document.getElementById(id).style.display="block";
     }
 }
+
+function href(link)
+{
+    document.location.href = link;
+}
 /***
  Slide Side Menu.
  **/
@@ -30,8 +35,8 @@ var side_menu = {
             '</div>'+
             '<div id="side_menu_app_content" class="menu_button" onclick="showHideSubMenu(\'side_menu_contact_sub_menu\')">צור קשר / פרסם כאן</div>'+
             '<div id="side_menu_contact_sub_menu" class="menu_hidden_container">'+
-                '<div class="menu_sub_button" id="call_now_button"><a class="side_menu_contact_links" href="tel:+0526474299">חייג עכשיו</a></div>'+
-                '<div class="menu_sub_button" id="send_mail_button"><a class="side_menu_contact_links" href="mailto:tallevi12@gmail.com">שלח מייל</a></div>'+
+                '<div class="menu_sub_button side_menu_contact_links" id="call_now_button" onclick="href(\'tel:+0526474299\')">חייג עכשיו</div>'+
+                '<div class="menu_sub_button side_menu_contact_links" id="send_mail_button" onclick="href(\'mailto:tallevi12@gmail.com\')">שלח מייל</div>'+
                 '<div class="menu_sub_button side_menu_contact_links" id="address_button">נתיבות, גבעת שפרה 14</div>'+
             '</div>'+
             '</div>'+

@@ -21,7 +21,7 @@ viewsFactory = {
 
     biz_cat_row: doT.template("<div onclick='{{=it.onClick || \"\" }}' class='{{=it.cssClasses || \"\" }}' style='background-image:url(\"{{=it.imgSrc || \"\" }}\")'><div class='biz_cat_content_container'> <div class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</div></div></div> "),
 
-    biz_row : doT.template("<div onclick=\"showHideSubMenu('biz_row_{{=it.id}}')\" class='{{=it.cssClasses || \"\" }}' style='background-image:url(\"{{=it.imgSrc || \"\" }}\")'><div class='biz_cat_content_container'> <div class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</div></div></div> <div id=\"biz_row_{{=it.id}}\" class=\"biz_hidden_container\"> <div class=\"menu_sub_button\" id=\"call_now_button\"><a class=\"side_menu_contact_links\" href=\"tel:{{=it.phone}}\"> חייג עכשיו </a> </div> <div class=\"menu_sub_button\" id=\"send_mail_button\"><a class=\"side_menu_contact_links\" href=\"mailto:{{=it.mail}}\"> שלח מייל </a> </div> <div class=\"menu_sub_button side_menu_contact_links\" id=\"address_button\"> {{=it.address}} </div> <div onclick=\"alert('{{=it.description}}');\" class=\"menu_sub_button side_menu_contact_links\" id=\"info_button\"> אודות </div> </div> "),
+    biz_row : doT.template("<div onclick=\"showHideSubMenu('biz_row_{{=it.id}}')\" class='{{=it.cssClasses || \"\" }}' style='background-image:url(\"{{=it.imgSrc || \"\" }}\")'><div class='biz_cat_content_container'> <div class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</div></div></div> <div id=\"biz_row_{{=it.id}}\" class=\"biz_hidden_container\"> <div class=\"menu_sub_button side_menu_contact_links\" id=\"call_now_button\" onclick=\"href('tel:{{=it.phone}}')\"> חייג עכשיו </div> <div class=\"menu_sub_button side_menu_contact_links\" id=\"send_mail_button\" onclick=\"href('mailto:{{=it.mail}}')\"> שלח מייל </div> <div class=\"menu_sub_button side_menu_contact_links\" id=\"address_button\"> {{=it.address}} </div> <div onclick=\"alert('{{=it.description}}');\" class=\"menu_sub_button side_menu_contact_links\" id=\"info_button\"> אודות </div> </div> "),
 
     gallery_row: doT.template("<div onclick='{{=it.onClick || \"\" }}' class='{{=it.cssClasses || \"\" }}' style='background-image:url(\"{{=it.imgSrc || \"\" }}\")'><div class='gallery_content_container'> <div class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</div> </div></div> "),
 
@@ -38,6 +38,6 @@ viewsFactory = {
 
         return header_str;
     },
-    footer: '</div>'
+    footer: '</div><div class="page_footer"></div>'
 
 }
