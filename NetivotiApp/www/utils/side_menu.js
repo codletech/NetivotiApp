@@ -31,7 +31,7 @@ var side_menu = {
             '<div id="side_menu_app_content_sub_menu" class="menu_hidden_container">'+
                 '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(2);});">חדשות</div>'+
                 '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(3);});">המגזין</div>'+
-                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(9);});">גלריות</div>'+
+                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){galleries_archive_page.loadPage(9);});">גלריות</div>'+
             '</div>'+
             '<div id="side_menu_app_content" class="menu_button" onclick="showHideSubMenu(\'side_menu_contact_sub_menu\')">צור קשר / פרסם כאן</div>'+
             '<div id="side_menu_contact_sub_menu" class="menu_hidden_container">'+

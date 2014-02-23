@@ -86,7 +86,7 @@ var mainPageContent =
                 '</div></div>'+
                 '<div id="news_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(2);">חדשות</div>'+cats_divs[0]+
                 '<div id="magazine_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(3);">המגזין</div>'+cats_divs[1]+
-                '<div id="galleries_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(9);" >גלריות</div>'+cats_divs[2];
+                '<div id="galleries_row" class="news_title_class title_bar_back" onclick="galleries_archive_page.loadPage(9);" >גלריות</div>'+cats_divs[2];
 
             document.getElementById('main_page_content').innerHTML = main_data;
             app.container.clientHeight;
