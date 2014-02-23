@@ -71,7 +71,6 @@
     bottom: 0;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    margin-bottom: 42px;
 }
 
 .articles_page_content
