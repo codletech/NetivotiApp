@@ -31,7 +31,7 @@ var mainPageContent =
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
             var cats_divs = {0:'',1:'',2:'',3:''};
-            cats_divs[2]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 450px;'>";
+            cats_divs[2]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 450px; float: left;'>";
             var index = 0;
             //parse the response to json
             var categories_data = JSON.parse(xmlhttp.responseText);
