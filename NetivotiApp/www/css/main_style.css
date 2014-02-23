@@ -78,6 +78,20 @@
     background: #008ed1;
 }
 
+.ads_wrap
+{
+    background: #E3E6DE;
+    border-bottom: 1px solid #C7C7C7;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    height: 104px;
+    background-repeat: no-repeat !important;
+    background-position: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
 .galleries_wrap
 {
     color: white;

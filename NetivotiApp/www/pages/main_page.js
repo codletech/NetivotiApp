@@ -31,6 +31,7 @@ var mainPageContent =
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
             var cats_divs = {0:'',1:'',2:'',3:''};
+            var zeroOrOne=0;
             cats_divs[2]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 450px; float: left;'>";
             var index = 0;
             //parse the response to json
@@ -52,6 +53,21 @@ var mainPageContent =
                                     mainTitle: post.name,
                                     onClick:  "gallery_page.loadPage("+post.id+");"
                                 });
+                        }
+                        else if(index==4)
+                        {
+                            cats_divs[zeroOrOne]+=
+                                viewsFactory.article_row({
+                                    cssClasses: "ads_wrap",
+                                    imgSrc: post.logo,
+                                    imgClass: "cont_image",
+                                    titleClass: "articles_main_title",
+                                    mainTitle: post.name,
+                                    descriptionClass: "main_article_description",
+                                    description: post.excerpt,
+                                    onClick:  "article_page.loadPage("+post.id+");"
+                                });
+                            zeroOrOne=((zeroOrOne+1)%2);
                         }
                         else
                         {
