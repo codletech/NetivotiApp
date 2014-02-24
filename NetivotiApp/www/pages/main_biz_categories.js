@@ -35,6 +35,11 @@ var main_biz_categories = {
                         });
                     }
 
+                    document.getElementById('biz_cat_page_main_content').clientHeight;
+                    cPages.get("biz_categories_page").vars.scroller = new IScroll('#biz_cat_page_main_content',{
+                        bounce:true,
+                        scrollbars: true
+                    });
                     document.getElementById('biz_cat_page_main_content').innerHTML = bodyTextToAppend;
                 }
             }
