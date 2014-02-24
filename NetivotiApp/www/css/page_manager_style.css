@@ -68,7 +68,7 @@
     right: 0;
     /*overflow-y: auto;*/
     top: 60px;
-    bottom: 0;
+    bottom: 42px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }

@@ -24,6 +24,11 @@ var article_page = {
                     document.getElementById('article_page_main_content').innerHTML = bodyTextToAppend;
                     document.getElementById('articles_page_title_id').innerHTML = jsonAfterParse.name;
                     document.getElementById('articles_page_title_id').style.fontSize = "16px";
+                    document.getElementById('article_page_main_content').clientHeight;
+                    cPages.get("single_article_page").vars.article_scroll = new IScroll('#article_page_main_content',{
+                        bounce:false,
+                        scrollbars: true
+                    });
                 }
             }
 
