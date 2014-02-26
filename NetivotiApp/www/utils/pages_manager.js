@@ -213,3 +213,5 @@ cPages = {
         return container.pagesManageIsLocked;
     }
 }
+
+document.addEventListener("backbutton", cPages.moveBack, false);
