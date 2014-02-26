@@ -38,10 +38,9 @@
 
 .news_title_class
 {
-    text-align: right;
     font-size: 15px;
     color: #ffffff;
-    padding: 7px 0px;
+    padding: 0px;
     font-weight: bold;
     padding-left: 0px;
     padding-right: 0px;
@@ -50,6 +49,10 @@
     background-position: 1% 50%;
     background-size: 29px;
     text-align: center;
+    width: 100%;
+    position: relative;
+    height: 33px;
+    line-height: 33px;
 }
 
 .news_title_class:active {
