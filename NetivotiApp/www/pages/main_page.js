@@ -32,7 +32,7 @@ var mainPageContent =
         {
             var cats_divs = {0:'',1:'',2:'',3:''};
             var zeroOrOne=0;
-            cats_divs[2]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 450px; float: left;'>";
+            cats_divs[2]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 450px;'>";
             var index = 0;
             //parse the response to json
             var categories_data = JSON.parse(xmlhttp.responseText);
