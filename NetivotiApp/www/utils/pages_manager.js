@@ -200,7 +200,16 @@ cPages = {
         var page = this.historyStack.pop();
         this.moveToPage(container,page,this.moveBackDirection,function() {cPages.removePage(toDelete);});
     },
-
+    globalMoveBack: function() {
+        var container = app.container;
+        if (cPages.isContainerLocked(container)) {
+            return;
+        }
+        //Remove last page from the history.
+        var toDelete = this.historyStack.pop();
+        var page = this.historyStack.pop();
+        this.moveToPage(container,page,this.moveBackDirection,function() {cPages.removePage(toDelete);});
+    },
     lockContainer: function(container) {
         container.pagesManageIsLocked = true;
     },
@@ -214,4 +223,13 @@ cPages = {
     }
 }
 
-document.addEventListener("backbutton", cPages.moveBack, false);
+document.addEventListener("deviceready", onDeviceReady, false);
+
+// PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+//
+function onDeviceReady() {
+    // Register the event listener
+    document.addEventListener("backbutton", cPages.globalMoveBack, false);
+}
+
+
