@@ -17,7 +17,7 @@ viewsFactory = {
 
     div: doT.template("<div class='{{=it.cssClasses || \"\" }}' id='{{=it.divId || \"\" }}' >{{=it.content || \"\" }}</div> "),
 
-    article_row: doT.template("<div onclick='{{=it.onClick || \"\" }}' class='{{=it.cssClasses || \"\" }}' style='background-image:url(\"{{=it.imgSrc || \"\" }}\")'><div class='article_content_container'> <div class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</div> <div class='{{=it.descriptionClass || \"\" }}'>{{=it.description || \"\" }}</div></div></div> "),
+    article_row: doT.template("<div onclick='{{=it.onClick || \"\" }}' class='{{=it.cssClasses || \"\" }}' style='background-image:url(\"{{=it.imgSrc || \"\" }}\"), url(img/left-arrow2.png);'><div class='article_content_container'> <div class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</div> <div class='{{=it.descriptionClass || \"\" }}'>{{=it.description || \"\" }}</div> <div class=\"articles_more_info\">{{=it.more_info || \"\" }}</div> </div></div> "),
 
     biz_cat_row: doT.template("<div onclick='{{=it.onClick || \"\" }}' class='{{=it.cssClasses || \"\" }}' style='background-image:url(\"{{=it.imgSrc || \"\" }}\")'><div class='biz_cat_content_container'> <div class='{{=it.titleClass || \"\" }}'>{{=it.mainTitle || \"\" }}</div></div></div> "),
 
@@ -38,6 +38,6 @@ viewsFactory = {
 
         return header_str;
     },
-    footer: '</div><div class="page_footer"></div>'
+    footer: doT.template('</div><div class="page_footer" id="{{=it.id || \"\" }}"></div>')
 
 }

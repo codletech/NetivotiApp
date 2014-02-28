@@ -7,7 +7,7 @@ var mainPageContent =
      */
     viewsFactory.header({content_scroll_id:'main_page_content_scroller',title: 'נתיבות <span style="color:#00a6ed;">Online</span>'} )+
     '<div id="main_page_content"></div>'+
-    viewsFactory.footer;
+    viewsFactory.footer({id:'main_footer'});
 
 /*
     ------------------------ Html injection functions --------------------------
@@ -65,6 +65,7 @@ var mainPageContent =
                                     mainTitle: post.name,
                                     descriptionClass: "main_article_description",
                                     description: post.excerpt,
+                                    more_info: post.more_info,
                                     onClick:  "article_page.loadPage("+post.id+");"
                                 });
                             zeroOrOne=((zeroOrOne+1)%2);
@@ -80,6 +81,7 @@ var mainPageContent =
                                     mainTitle: post.name,
                                     descriptionClass: "main_article_description",
                                     description: post.excerpt,
+                                    more_info: post.more_info,
                                     onClick:  "article_page.loadPage("+post.id+");"
                                 });
                         }
@@ -108,7 +110,7 @@ var mainPageContent =
             app.container.clientHeight;
             var sliderContent = document.getElementById("netivoti_main_slider_content");
             var slider = document.getElementById('netivoti_main_slider');
-
+            loadAdToStrip('main_footer');
             if (sliderContent && slider) {
                 //alert(slider.id);
                 sliderContent.innerHTML = cats_divs[3];
@@ -123,6 +125,7 @@ var mainPageContent =
                 });
             }
             app.container.clientHeight;
+
             /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
                 bounce:false,
                 scrollbars: true

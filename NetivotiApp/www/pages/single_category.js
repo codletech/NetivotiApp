@@ -5,7 +5,7 @@ var single_subcategory = {
     loadPage: function(cat_id) {
         var single_sub_category_page_contents =
             viewsFactory.header({title: 'נתיבות <span style=" color:#00a6ed;">Online</span>',page_content_class: 'page_content single_cat_page',content_scroll_id:'single_cat_page_main_content', backButton:true, title_id: 'single_cat_page_title_id'})+
-                viewsFactory.footer;
+                viewsFactory.footer({id:"single_cat_footer"});
         var single_category_initial_function = (function() {
 
             // api address
@@ -40,6 +40,7 @@ var single_subcategory = {
                     }
 
                     document.getElementById('single_cat_page_main_content').innerHTML = bodyTextToAppend;
+                    loadAdToStrip('single_cat_footer');
                 }
             }
             // open the connection using get method and send it

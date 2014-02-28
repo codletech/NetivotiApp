@@ -5,7 +5,7 @@ var archive_page = {
     loadPage: function(cat_id) {
         var archivePageContents =
             viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'page_content articles_page_main_content',content_scroll_id:'articles_page_main_content'+cat_id, backButton:true, title_id: 'articles_page_title_id'+cat_id})+
-                viewsFactory.footer;
+                viewsFactory.footer({id:'archive_footer'});
         var initFunction = (function() {
 
             // api address
@@ -38,6 +38,7 @@ var archive_page = {
                     }
 
                     document.getElementById('articles_page_main_content'+cat_id).innerHTML = bodyTextToAppend;
+                    loadAdToStrip('archive_footer');
                 }
             }
             // open the connection using get method and send it

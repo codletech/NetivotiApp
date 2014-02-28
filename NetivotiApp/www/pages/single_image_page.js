@@ -8,8 +8,8 @@ var single_image_page = {
                 '<div id="gallery_second_title">'+name+'</div>'+
                 '<div class="line_sep"></div>'+
                 '<img class="full_image" src="'+img_src+'"/>'+
-                viewsFactory.footer;
+                viewsFactory.footer({id:"single_image_footer"});
         cPages.addPage("single_image_page",single_image_page_content);
-        cPages.moveToPage(app.container,"single_image_page",cPages.directions.left);
+        cPages.moveToPage(app.container,"single_image_page",cPages.directions.left, function(){ loadAdToStrip('single_image_footer'); });
     }
 }

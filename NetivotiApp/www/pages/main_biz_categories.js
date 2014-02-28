@@ -5,7 +5,7 @@ var main_biz_categories = {
     loadPage: function() {
         var biz_cat_page_contents =
             viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'page_content biz_cat_page',content_scroll_id:'biz_cat_page_main_content', backButton:true, title_id: 'biz_cat_page_title_id'})+
-                viewsFactory.footer;
+                viewsFactory.footer({id:"main_biz_footer"});
         var biz_cats_initial_function = (function() {
 
             // api address
@@ -36,11 +36,8 @@ var main_biz_categories = {
                     }
 
                     document.getElementById('biz_cat_page_main_content').clientHeight;
-                    cPages.get("biz_categories_page").vars.scroller = new IScroll('#biz_cat_page_main_content',{
-                        bounce:true,
-                        scrollbars: true
-                    });
                     document.getElementById('biz_cat_page_main_content').innerHTML = bodyTextToAppend;
+                    loadAdToStrip('main_biz_footer');
                 }
             }
             // open the connection using get method and send it
