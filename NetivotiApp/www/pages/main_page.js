@@ -30,9 +30,9 @@ var mainPageContent =
     {
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
-            var cats_divs = {0:'',1:'',2:'',3:''};
+            var cats_divs = {0:'',1:'',2:'',3:'', 4:'',5:''};
             var zeroOrOne=0;
-            cats_divs[2]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 450px;'>";
+            cats_divs[5]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 450px; height: 220px;'>";
             var index = 0;
             //parse the response to json
             var categories_data = JSON.parse(xmlhttp.responseText);
@@ -42,18 +42,22 @@ var mainPageContent =
                     var post = category_data[post_key];
 
                     if (index!=3) {
-                        if(index==2)
+                        // whats up in town
+                        // gallery row, article view
+                        if(index==5)
                         {
                             cats_divs[index]+=
                                 viewsFactory.gallery_row({
                                     cssClasses: "galleries_wrap",
                                     imgSrc: post.logo,
+                                    more_info: post.more_info,
                                     imgClass: "cont_image",
                                     titleClass: "articles_main_title",
                                     mainTitle: post.name,
-                                    onClick:  "gallery_page.loadPage("+post.id+");"
+                                    onClick:  "article_page.loadPage("+post.id+");"
                                 });
                         }
+                        // ads
                         else if(index==4)
                         {
                             cats_divs[zeroOrOne]+=
@@ -69,6 +73,21 @@ var mainPageContent =
                                     onClick:  "article_page.loadPage("+post.id+");"
                                 });
                             zeroOrOne=((zeroOrOne+1)%2);
+                        }
+                        else if(index == 2)
+                        {
+                            cats_divs[index]+=
+                                viewsFactory.article_row({
+                                    cssClasses: "article_wrap",
+                                    imgSrc: post.logo,
+                                    imgClass: "cont_image",
+                                    titleClass: "articles_main_title",
+                                    mainTitle: post.name,
+                                    descriptionClass: "main_article_description",
+                                    description: post.excerpt,
+                                    more_info: post.more_info,
+                                    onClick:  "gallery_page.loadPage("+post.id+");"
+                                });
                         }
                         else
                         {
@@ -96,15 +115,25 @@ var mainPageContent =
                 }
                 index++;
             }
-            cats_divs[2]+="</div></div>";
+            cats_divs[5]+="</div></div>";
             //Add the data to the view.
             var main_data =
                 '<div class="main_slider_top_container"><div class="swipe" id="netivoti_main_slider">'+
                     '<div id="netivoti_main_slider_content" class="swipe-wrap">'+cats_divs[3]+' </div>'+
+                    '<div class="slider_circles">'+
+                        '<ul id="position">'+
+                            '<li class="on"></li>'+
+                            '<li></li>'+
+                            '<li></li>'+
+                            '<li></li>'+
+                        '</ul>'+
+                    '</div>'+
                 '</div></div>'+
                 '<div id="news_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(2);">חדשות</div>'+cats_divs[0]+
                 '<div id="magazine_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(3);">המגזין</div>'+cats_divs[1]+
-                '<div id="galleries_row" class="news_title_class title_bar_back" onclick="galleries_archive_page.loadPage(9);" >גלריות</div>'+cats_divs[2];
+                '<div id="gal_row" class="news_title_class title_bar_back" onclick="galleries_archive_page.loadPage(3);">גלריות</div>'+cats_divs[2]+
+                '<div class="netivoti_line"></div>'+
+                '<div id="galleries_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(190);" >מה קורה בעיר</div>'+cats_divs[5];
 
             document.getElementById('main_page_content').innerHTML = main_data;
             app.container.clientHeight;
@@ -117,11 +146,19 @@ var mainPageContent =
                 sliderContent.clientHeight;
                 //Save the data
                 cPages.get("main").vars.sliderData = cats_divs[3];
-
+                var bullets = document.getElementById('position').getElementsByTagName('li');
                 cPages.get("main").vars.mySwiper = new Swipe(slider,{
-                    //Your options here:
+                    continuous: true,
+                    auto: 3000,
+                    callback: function(pos) {
 
-                    //etc..
+                        var i = bullets.length;
+                        while (i--) {
+                            bullets[i].className = ' ';
+                        }
+                        bullets[pos].className = 'on';
+
+                    }
                 });
             }
             app.container.clientHeight;
@@ -154,10 +191,19 @@ var mainRefreshFunction = function() {
         else {
             sliderContent.innerHTML = "";
         }
+        var bullets = document.getElementById('position').getElementsByTagName('li');
         cPages.get("main").vars.mySwiper = new Swipe(slider,{
-            //Your options here:
+            continuous: true,
+            auto: 3000,
+            callback: function(pos) {
 
-            //etc..
+                var i = bullets.length;
+                while (i--) {
+                    bullets[i].className = ' ';
+                }
+                bullets[pos].className = 'on';
+
+            }
         });
         /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
             bounce:false,
