@@ -26,7 +26,7 @@ var article_page = {
                     document.getElementById('articles_page_title_id').style.fontSize = "16px";
                     document.getElementById('article_page_main_content').clientHeight;
                     loadAdToStrip('article_footer');
-
+                    loaded('#article_page_main_content');
 
                 }
             }

@@ -7,6 +7,17 @@
  * and get random ad from the server
  * then place the ad in the strip
  */
+
+function loaded (divID) {
+    var myScroll;
+    myScroll = new IScroll(divID, {
+        scrollbars: true,
+        mouseWheel: true,
+        interactiveScrollbars: true,
+        shrinkScrollbars: 'scale',
+        fadeScrollbars: true
+    });
+}
 function loadAdToStrip(divID)
 {
     var page_ad = document.getElementById(divID);

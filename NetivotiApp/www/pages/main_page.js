@@ -165,6 +165,15 @@ var mainPageContent =
             }
             app.container.clientHeight;
 
+            $(document).one('mobileinit', function () {
+
+                // Setting #container div as a jqm pageContainer
+                $.mobile.pageContainer = $('#main_page_content_scroller');
+
+                // Setting default page transition to slide
+                $.mobile.defaultPageTransition = 'slide';
+
+            });
             /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
                 bounce:false,
                 scrollbars: true
