@@ -2,6 +2,7 @@
  * App object.
  */
 var app;
+var myScroll;
 app = {
     container: document.getElementById("app_container"),
     init: function() {

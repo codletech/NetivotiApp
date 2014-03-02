@@ -1,6 +1,7 @@
 /**
  Creates the main page content.
  */
+
 var mainPageContent =
     /*
         Header - netivot online
@@ -163,7 +164,7 @@ var mainPageContent =
                 });
             }
             app.container.clientHeight;
-
+            myScroll = new IScroll('#main_page_content_scroller', { mouseWheel: true });
             /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
                 bounce:false,
                 scrollbars: true
