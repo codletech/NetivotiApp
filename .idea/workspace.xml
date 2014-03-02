@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/pages/archive_page.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/pages/archive_page.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/pages/articles_page.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/pages/articles_page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/index.html" afterPath="$PROJECT_DIR$/NetivotiApp/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/utils/side_menu.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/utils/side_menu.js" />
     </list>
     <ignored path="NetivotiApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +30,10 @@
       <file leaf-file-name="articles_page.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/articles_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="20" selection-start="2087" selection-end="2162" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="720">
+            <state line="28" column="0" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="720">
               <folding>
-                <marker date="1393724846000" expanded="true" signature="199:213" placeholder="..." />
-                <marker date="1393724846000" expanded="true" signature="1183:1269" placeholder="..." />
+                <marker date="1393725025000" expanded="true" signature="199:213" placeholder="..." />
+                <marker date="1393725025000" expanded="true" signature="1183:1269" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -80,22 +77,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_page.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main_page.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="39" selection-start="8178" selection-end="8178" vertical-scroll-proportion="0.46448088" vertical-offset="2220" max-vertical-offset="3405">
+            <state line="166" column="0" selection-start="8179" selection-end="8179" vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="3405">
               <folding>
-                <marker date="1393724846000" expanded="false" signature="210:224" placeholder="..." />
-                <marker date="1393724846000" expanded="false" signature="1439:1467" placeholder="..." />
+                <marker date="1393725016000" expanded="false" signature="210:224" placeholder="..." />
+                <marker date="1393725016000" expanded="false" signature="1439:1467" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+            <state line="3" column="8" selection-start="31" selection-end="31" vertical-scroll-proportion="0.08007117" vertical-offset="0" max-vertical-offset="562">
               <folding />
             </state>
           </provider>
@@ -180,9 +177,9 @@
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/archive_page.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/side_menu.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/index.html" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/pages/articles_page.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/pages/articles_page.js" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" />
       </list>
     </option>
   </component>
@@ -635,8 +632,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="20" selection-start="3874" selection-end="3875" vertical-scroll-proportion="0.0" vertical-offset="1221" max-vertical-offset="3087">
           <folding>
-            <marker date="1393724846000" expanded="false" signature="210:224" placeholder="..." />
-            <marker date="1393724846000" expanded="false" signature="1439:1467" placeholder="..." />
+            <marker date="1393725016000" expanded="false" signature="210:224" placeholder="..." />
+            <marker date="1393725016000" expanded="false" signature="1439:1467" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -942,30 +939,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
+        <state line="166" column="0" selection-start="8179" selection-end="8179" vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="3405">
+          <folding>
+            <marker date="1393725016000" expanded="false" signature="210:224" placeholder="..." />
+            <marker date="1393725016000" expanded="false" signature="1439:1467" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/articles_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="20" selection-start="2087" selection-end="2162" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="720">
+        <state line="28" column="0" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="720">
           <folding>
-            <marker date="1393724846000" expanded="true" signature="199:213" placeholder="..." />
-            <marker date="1393724846000" expanded="true" signature="1183:1269" placeholder="..." />
+            <marker date="1393725025000" expanded="true" signature="199:213" placeholder="..." />
+            <marker date="1393725025000" expanded="true" signature="1183:1269" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="39" selection-start="8178" selection-end="8178" vertical-scroll-proportion="0.46448088" vertical-offset="2220" max-vertical-offset="3405">
-          <folding>
-            <marker date="1393724846000" expanded="false" signature="210:224" placeholder="..." />
-            <marker date="1393724846000" expanded="false" signature="1439:1467" placeholder="..." />
-          </folding>
+        <state line="3" column="8" selection-start="31" selection-end="31" vertical-scroll-proportion="0.08007117" vertical-offset="0" max-vertical-offset="562">
+          <folding />
         </state>
       </provider>
     </entry>
