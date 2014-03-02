@@ -8,17 +8,35 @@
  * then place the ad in the strip
  */
 
-function isTouchDevice(){
-    try{
+function crappyDevice()
+{
+    var ua = navigator.userAgent;
+    if( ua.indexOf("Android") >= 0 )
+    {
+        var androidversion = parseFloat(ua.slice(ua.indexOf("Android")+8));
+        if (androidversion <= 2.3)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+function isTouchDevice()
+{
+    try
+    {
         document.createEvent("TouchEvent");
         return true;
-    }catch(e){
+    }
+    catch(e)
+    {
         return false;
     }
 }
 
 function touchScroll(id){
-    if(isTouchDevice()){ //if touch events exist...
+    if(isTouchDevice() && crappyDevice)
+    { //if touch events exist and there is a scroll promblem - only android under 2.3
         var el=document.getElementById(id);
         var scrollStartPos=0;
 
