@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/utils/function.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/utils/function.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/index.html" afterPath="$PROJECT_DIR$/NetivotiApp/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
     </list>
     <ignored path="NetivotiApp.iws" />
@@ -78,10 +80,10 @@
       <file leaf-file-name="main_page.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="85" selection-start="195" selection-end="195" vertical-scroll-proportion="0.21857923" vertical-offset="0" max-vertical-offset="3540">
+            <state line="8" column="83" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21857923" vertical-offset="0" max-vertical-offset="3420">
               <folding>
-                <marker date="1393757471000" expanded="false" signature="212:226" placeholder="..." />
-                <marker date="1393757471000" expanded="false" signature="1441:1469" placeholder="..." />
+                <marker date="1393758944000" expanded="false" signature="210:224" placeholder="..." />
+                <marker date="1393758944000" expanded="false" signature="1439:1467" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -99,7 +101,7 @@
       <file leaf-file-name="function.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/function.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+            <state line="35" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -174,8 +176,8 @@
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/archive_page.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/side_menu.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/utils/function.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/articles_page.js" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/utils/function.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/index.html" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
       </list>
@@ -625,8 +627,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="20" selection-start="3874" selection-end="3875" vertical-scroll-proportion="0.0" vertical-offset="1221" max-vertical-offset="3087">
           <folding>
-            <marker date="1393757471000" expanded="false" signature="212:226" placeholder="..." />
-            <marker date="1393757471000" expanded="false" signature="1441:1469" placeholder="..." />
+            <marker date="1393758944000" expanded="false" signature="210:224" placeholder="..." />
+            <marker date="1393758944000" expanded="false" signature="1439:1467" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -934,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/articles_page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="29" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="720">
@@ -951,19 +946,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="69" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.2742857" vertical-offset="276" max-vertical-offset="855">
+        <state line="29" column="61" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.82857144" vertical-offset="0" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="85" selection-start="195" selection-end="195" vertical-scroll-proportion="0.21857923" vertical-offset="0" max-vertical-offset="3540">
+        <state line="8" column="83" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21857923" vertical-offset="0" max-vertical-offset="3420">
           <folding>
-            <marker date="1393757471000" expanded="false" signature="212:226" placeholder="..." />
-            <marker date="1393757471000" expanded="false" signature="1441:1469" placeholder="..." />
+            <marker date="1393758944000" expanded="false" signature="210:224" placeholder="..." />
+            <marker date="1393758944000" expanded="false" signature="1439:1467" placeholder="..." />
           </folding>
         </state>
       </provider>
