@@ -37,6 +37,7 @@ var biz_subcategories = {
 
                     document.getElementById('biz_subcat_page_main_content').innerHTML = bodyTextToAppend;
                     loadAdToStrip('biz_subcat_footer');
+                    touchScroll('biz_subcat_page_main_content');
                 }
             }
             // open the connection using get method and send it

@@ -10,6 +10,6 @@ var single_image_page = {
                 '<img class="full_image" src="'+img_src+'"/>'+
                 viewsFactory.footer({id:"single_image_footer"});
         cPages.addPage("single_image_page",single_image_page_content);
-        cPages.moveToPage(app.container,"single_image_page",cPages.directions.left, function(){ loadAdToStrip('single_image_footer'); });
+        cPages.moveToPage(app.container,"single_image_page",cPages.directions.left, function(){ loadAdToStrip('single_image_footer'); touchScroll('gallery_page_main_content'); });
     }
 }

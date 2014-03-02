@@ -33,6 +33,7 @@ var side_menu = {
             '<div id="side_menu_container" class="side_menu_hidden">'+
             '<div class="menu_button" onclick="side_menu.showOrHide(function(){ goToMainPage(); });">ראשי</div>'+
             '<div id="side_menu_business_button" class="menu_button" onclick="side_menu.showOrHide(function(){main_biz_categories.loadPage();});">עסקים</div>'+
+            '<div id="side_menu_direct_contact_button" class="menu_button" onclick="side_menu.showOrHide(function(){direct_contact_page.loadPage();});">קשר ישיר</div>'+
             '<div id="side_menu_app_content" class="menu_button" onclick="showHideSubMenu(\'side_menu_app_content_sub_menu\')">תוכן האפליקציה</div>'+
             '<div id="side_menu_app_content_sub_menu" class="menu_hidden_container">'+
                 '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(2);});">חדשות</div>'+

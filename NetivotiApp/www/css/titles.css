@@ -70,3 +70,30 @@
     height: 30px;
     width: 20px;
 }
+
+.direct_contact_wrap
+{
+    background-color: darkorange;
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.direct_contact_biz_wrap
+{
+    background-color: white;
+    background-image: url('../img/bphone.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+    border-bottom: 1px solid #C7C7C7;
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}

@@ -37,6 +37,7 @@ archive_page = {
 
                     document.getElementById('articles_page_main_content' + cat_id).innerHTML = bodyTextToAppend;
                     loadAdToStrip('archive_footer');
+                    touchScroll('articles_page_main_content');
                 }
             }
             // open the connection using get method and send it

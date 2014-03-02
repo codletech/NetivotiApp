@@ -41,6 +41,7 @@ var single_subcategory = {
 
                     document.getElementById('single_cat_page_main_content').innerHTML = bodyTextToAppend;
                     loadAdToStrip('single_cat_footer');
+                    touchScroll('single_cat_page_main_content');
                 }
             }
             // open the connection using get method and send it
