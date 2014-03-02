@@ -101,6 +101,7 @@ var mainPageContent =
                                     descriptionClass: "main_article_description",
                                     description: post.excerpt,
                                     more_info: post.more_info,
+                                    moreCSS: post.moreCSS,
                                     onClick:  "article_page.loadPage("+post.id+");"
                                 });
                         }

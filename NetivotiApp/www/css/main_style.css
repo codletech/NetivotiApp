@@ -206,6 +206,13 @@
     top: 70%;
     left: 10%;
 }
+.video_art
+{
+    background-image: url("../img/video.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
 
 .netivoti_line
 {

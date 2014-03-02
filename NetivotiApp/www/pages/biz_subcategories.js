@@ -24,10 +24,10 @@ var biz_subcategories = {
                     var businesses = jsonAfterParse.businesses;
                     for (var i=0;i<businesses.length;i++)
                     {
-                        bodyTextToAppend+=viewsFactory.biz_cat_row({
-                            cssClasses: "biz_cat_wrap",
+                        bodyTextToAppend+=viewsFactory.biz_subcat_row({
+                            cssClasses: "biz_subcat_wrap",
                             imgClass: "cont_image",
-                            imgSrc: "img/category.png",
+                            contentClass: "biz_subcat_content_container",
                             titleClass: "articles_main_title",
                             mainTitle: businesses[i].cat_name + ' ('+businesses[i].bizNum+') ',
                             descriptionClass: "main_article_description",
