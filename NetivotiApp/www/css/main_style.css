@@ -167,7 +167,7 @@
     height: 4px;
     background-image: url(../img/main_top_border.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 .main_slider_top_container{
     /*-webkit-transform: translate3d(0, 0, 0);
