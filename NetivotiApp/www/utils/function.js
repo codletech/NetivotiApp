@@ -57,7 +57,7 @@ function isTouchDevice()
 }
 
 function touchScroll(id){
-    if(isTouchDevice() )//&& crappyDevice())
+    if(isTouchDevice() && crappyDevice())
     { //if touch events exist and there is a scroll promblem - only android under 2.3
         var el=document.getElementById(id);
         var scrollStartPos=0;
