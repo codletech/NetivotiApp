@@ -113,7 +113,7 @@ function loadMainAD(divID)
             page_ad.style.backgroundSize = "100% 100%";
             page_ad.style.backgroundRepeat = "no-repeat";
             setTimeout(function(){
-                page_ad.remove();
+                page_ad.parentNode.removeChild(page_ad);
             },4000);
         }
     }
