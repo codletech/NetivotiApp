@@ -169,15 +169,12 @@ var mainPageContent =
             }
             app.container.clientHeight;
 
-            
+
             cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
                 bounce:false,
                 scrollbars: true
             });
-            cPages.get("main").vars.galleriesScroll = new IScroll('#galleries_row_scroller',{
-                bounce:false,
-                scrollX:true
-            });
+            
 
 
         }
