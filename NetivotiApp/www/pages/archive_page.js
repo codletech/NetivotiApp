@@ -5,7 +5,7 @@ var archive_page;
 archive_page = {
     loadPage: function (cat_id) {
         var archivePageContents =
-            viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>', page_content_class: 'page_content articles_page_main_content', content_scroll_id: 'articles_page_main_content' + cat_id, backButton: true, title_id: 'articles_page_title_id' + cat_id}) +
+            viewsFactory.header({page_content_class: 'page_content articles_page_main_content', content_scroll_id: 'articles_page_main_content' + cat_id, backButton: true, title_id: 'articles_page_title_id' + cat_id}) +
                 viewsFactory.footer({id: 'archive_footer'});
         var initFunction = (function () {
 
@@ -17,7 +17,6 @@ archive_page = {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
-                    console.log(jsonAfterParse.name);
                     document.getElementById('articles_page_title_id' + cat_id).innerHTML = jsonAfterParse.name;
                     var bodyTextToAppend = '';
                     var articles = jsonAfterParse.articles;

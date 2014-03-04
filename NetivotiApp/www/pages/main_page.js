@@ -6,7 +6,7 @@ var mainPageContent =
     /*
         Header - netivot online
      */
-    viewsFactory.header({content_scroll_id:'main_page_content_scroller',title: 'נתיבות <span style="color:#00a6ed;">Online</span>'} )+
+    viewsFactory.header({content_scroll_id:'main_page_content_scroller', isWithAdd:true} )+
     '<div id="main_page_content"></div>'+
     viewsFactory.footer({id:'main_footer'});
 
@@ -24,6 +24,7 @@ var mainPageContent =
     ============================================================================
  */
 (function() {
+
     // api address
     var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_main_page_data.php";
     var xmlhttp = new XMLHttpRequest();
@@ -33,7 +34,7 @@ var mainPageContent =
         {
             var cats_divs = {0:'',1:'',2:'',3:'', 4:'',5:''};
             var zeroOrOne=0;
-            cats_divs[5]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 450px; height: 220px;'>";
+            cats_divs[5]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 770px; height: 220px;'>";
             var index = 0;
             //parse the response to json
             var categories_data = JSON.parse(xmlhttp.responseText);
@@ -111,7 +112,8 @@ var mainPageContent =
                         cats_divs[index]+=
                             viewsFactory.sliderRow({
                                 imgLink: post.logo,
-                                imgDesc: post.name
+                                imgDesc: post.name,
+                                onClick:  "article_page.loadPage("+post.id+");"
                             });
                     }
                 }
@@ -133,7 +135,7 @@ var mainPageContent =
                 '</div></div>'+
                 '<div id="news_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(2);">חדשות</div>'+cats_divs[0]+
                 '<div id="magazine_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(3);">המגזין</div>'+cats_divs[1]+
-                '<div id="gal_row" class="news_title_class title_bar_back" onclick="galleries_archive_page.loadPage(3);">גלריות</div>'+cats_divs[2]+
+                '<div id="gal_row" class="news_title_class title_bar_back" onclick="galleries_archive_page.loadPage(9);">גלריות</div>'+cats_divs[2]+
                 '<div class="netivoti_line"></div>'+
                 '<div id="galleries_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(190);" >מה קורה בעיר</div>'+cats_divs[5];
 
@@ -141,6 +143,7 @@ var mainPageContent =
             app.container.clientHeight;
             var sliderContent = document.getElementById("netivoti_main_slider_content");
             var slider = document.getElementById('netivoti_main_slider');
+            loadMainAD('main_ad_netivoti_id');
             loadAdToStrip('main_footer');
             if (sliderContent && slider) {
                 //alert(slider.id);
@@ -151,7 +154,7 @@ var mainPageContent =
                 var bullets = document.getElementById('position').getElementsByTagName('li');
                 cPages.get("main").vars.mySwiper = new Swipe(slider,{
                     continuous: true,
-                    auto: 3000,
+                    auto: 2000,
                     callback: function(pos) {
 
                         var i = bullets.length;
@@ -197,7 +200,7 @@ var mainRefreshFunction = function() {
         var bullets = document.getElementById('position').getElementsByTagName('li');
         cPages.get("main").vars.mySwiper = new Swipe(slider,{
             continuous: true,
-            auto: 3000,
+            auto: 2000,
             callback: function(pos) {
 
                 var i = bullets.length;

@@ -4,7 +4,7 @@
 var article_page = {
     loadPage: function(article_id) {
         var articlesPageContent =
-            viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'articles_page_content',content_scroll_id:'article_page_main_content', backButton:true, title_id: 'articles_page_title_id'})+
+            viewsFactory.header({page_content_class: 'articles_page_content',content_scroll_id:'article_page_main_content', backButton:true, title_id: 'articles_page_title_id'})+
                 viewsFactory.footer({id:'article_footer'});
         var articlesInitFunction = (function() {
             // api address

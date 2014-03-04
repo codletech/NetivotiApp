@@ -185,6 +185,7 @@ cPages = {
             //lastPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
             //toPageDiv.clientHeight; //Force layout refresh. IMPORTANT!!!
 
+
         }
         else {
             console.error("moveToPage Error: page "+toPage+" doesn't exist.");

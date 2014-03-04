@@ -39,12 +39,13 @@ var side_menu = {
                 '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(2);});">חדשות</div>'+
                 '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(3);});">המגזין</div>'+
                 '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){galleries_archive_page.loadPage(9);});">גלריות</div>'+
+                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(190);});">מה קורה בעיר</div>'+
             '</div>'+
             '<div id="side_menu_app_content" class="menu_button" onclick="showHideSubMenu(\'side_menu_contact_sub_menu\')">צור קשר / פרסם כאן</div>'+
             '<div id="side_menu_contact_sub_menu" class="menu_hidden_container">'+
                 '<div class="menu_sub_button side_menu_contact_links" id="call_now_button" onclick="href(\'tel:+0526474299\')">חייג עכשיו</div>'+
                 '<div class="menu_sub_button side_menu_contact_links" id="send_mail_button" onclick="href(\'mailto:tallevi12@gmail.com\')">שלח מייל</div>'+
-                '<div class="menu_sub_button side_menu_contact_links" id="address_button">נתיבות, גבעת שפרה 14</div>'+
+                '<div class="menu_sub_button side_menu_contact_links" id="address_button" onclick=\"href(\'http://maps.google.com/maps?q=smilo 20 netivot israel\')\">נתיבות, גבעת שפרה 14</div>'+
             '</div>'+
             '</div>'+
             '<div id="side_menu_whitespace" style="display:none;" class="side_menu_visible" ontouchstart="side_menu.whiteSpaceTouch();">'+

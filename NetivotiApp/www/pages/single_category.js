@@ -4,7 +4,7 @@
 var single_subcategory = {
     loadPage: function(cat_id) {
         var single_sub_category_page_contents =
-            viewsFactory.header({title: 'נתיבות <span style=" color:#00a6ed;">Online</span>',page_content_class: 'page_content single_cat_page',content_scroll_id:'single_cat_page_main_content', backButton:true, title_id: 'single_cat_page_title_id'})+
+            viewsFactory.header({page_content_class: 'page_content single_cat_page',content_scroll_id:'single_cat_page_main_content', backButton:true, title_id: 'single_cat_page_title_id'})+
                 viewsFactory.footer({id:"single_cat_footer"});
         var single_category_initial_function = (function() {
 
@@ -19,7 +19,7 @@ var single_subcategory = {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
                     console.log(jsonAfterParse.name);
-                    document.getElementById('single_cat_page_main_content').innerHTML = jsonAfterParse.name;
+                    getCatNameByID(cat_id, 'single_cat_page_title_id');
                     var bodyTextToAppend='';
                     var businesses = jsonAfterParse;
                     for (var i=0;i<businesses.length;i++)
@@ -32,6 +32,7 @@ var single_subcategory = {
                             phone: businesses[i].phone,
                             mail: businesses[i].mail,
                             address: businesses[i].address,
+                            facebook: businesses[i].facebook,
                             description: businesses[i].description,
                             titleClass: "articles_main_title",
                             mainTitle: businesses[i].name,

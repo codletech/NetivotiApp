@@ -4,7 +4,7 @@
 var galleries_archive_page = {
     loadPage: function(cat_id) {
         var galleriesArchivePageContents =
-            viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'page_content articles_page_main_content',content_scroll_id:'articles_page_main_content'+cat_id, backButton:true, title_id: 'articles_page_title_id'+cat_id})+
+            viewsFactory.header({page_content_class: 'page_content articles_page_main_content',content_scroll_id:'galleries_archive_page_main_content'+cat_id, backButton:true, title_id: 'galleries_archive_page_title_id'+cat_id})+
                 viewsFactory.footer({id:'galleries_archive_footer'});
         var galleriesInitFunction = (function() {
 
@@ -19,7 +19,7 @@ var galleries_archive_page = {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
                     console.log(jsonAfterParse.name);
-                    document.getElementById('articles_page_title_id'+cat_id).innerHTML = jsonAfterParse.name;
+                    document.getElementById('galleries_archive_page_title_id'+cat_id).innerHTML = jsonAfterParse.name;
                     var bodyTextToAppend='';
                     var articles = jsonAfterParse.articles;
                     for (var i=0;i<articles.length;i++)
@@ -37,9 +37,9 @@ var galleries_archive_page = {
                         });
                     }
 
-                    document.getElementById('articles_page_main_content'+cat_id).innerHTML = bodyTextToAppend;
+                    document.getElementById('galleries_archive_page_main_content'+cat_id).innerHTML = bodyTextToAppend;
                     loadAdToStrip('galleries_archive_footer');
-                    touchScroll('articles_page_main_content');
+                    touchScroll('galleries_archive_page_main_content');
                 }
             }
             // open the connection using get method and send it

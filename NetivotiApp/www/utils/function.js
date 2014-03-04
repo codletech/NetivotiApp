@@ -2,6 +2,27 @@
  * Created by tallevi on 27/02/14.
  */
 
+
+function getCatNameByID(cat_id, divID)
+{
+    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?get_cat_name_by_id="+cat_id;
+    var xmlhttp = new XMLHttpRequest();
+    var ans = "";
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            //parse the response to json
+            var jsonAfterParse = JSON.parse(xmlhttp.responseText);
+            document.getElementById(divID).innerHTML = jsonAfterParse;
+        }
+    }
+
+    // open the connection using get method and send it
+    xmlhttp.open("GET",netivotiAPI,true);
+    xmlhttp.send();
+}
+
 /**
  * Function that gets the div of the ad strip
  * and get random ad from the server
@@ -21,6 +42,7 @@ function crappyDevice()
     }
     return false;
 }
+
 function isTouchDevice()
 {
     try
@@ -65,6 +87,33 @@ function loadAdToStrip(divID)
         {
             var jsonAfterParse = JSON.parse(xmlhttp.responseText);
             page_ad.style.backgroundImage = ' url("'+jsonAfterParse.ad+'")';
+            page_ad.style.backgroundRepeat = "no-repeat";
+            page_ad.style.backgroundSize = "100% 100%";
+        }
+    }
+    // open the connection using get method and send it
+    xmlhttp.open("GET",netivotiAPI,true);
+    xmlhttp.send();
+}
+
+function loadMainAD(divID)
+{
+    var page_ad = document.getElementById(divID);
+    //page_ad.style.backgroundImage.
+    // api address
+    var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?get_big_ads=1";
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            var jsonAfterParse = JSON.parse(xmlhttp.responseText);
+            page_ad.style.backgroundImage = ' url("'+jsonAfterParse.ad+'")';
+            page_ad.style.backgroundSize = "100% 100%";
+            page_ad.style.backgroundRepeat = "no-repeat";
+            setTimeout(function(){
+                page_ad.remove();
+            },3000);
         }
     }
     // open the connection using get method and send it

@@ -4,7 +4,7 @@
 var main_biz_categories = {
     loadPage: function() {
         var biz_cat_page_contents =
-            viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'page_content biz_cat_page',content_scroll_id:'biz_cat_page_main_content', backButton:true, title_id: 'biz_cat_page_title_id'})+
+            viewsFactory.header({page_content_class: 'page_content biz_cat_page',content_scroll_id:'biz_cat_page_main_content', backButton:true, title_id: 'biz_cat_page_title_id'})+
                 viewsFactory.footer({id:"main_biz_footer"});
         var biz_cats_initial_function = (function() {
 
@@ -19,7 +19,7 @@ var main_biz_categories = {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
                     console.log(jsonAfterParse.name);
-                    document.getElementById('biz_cat_page_main_content').innerHTML = jsonAfterParse.name;
+                    document.getElementById('biz_cat_page_title_id').innerHTML = "עסקים";
                     var bodyTextToAppend='';
                     var businesses = jsonAfterParse.businesses;
                     for (var i=0;i<businesses.length;i++)
@@ -27,7 +27,7 @@ var main_biz_categories = {
                         bodyTextToAppend+=viewsFactory.biz_cat_row({
                             cssClasses: "biz_cat_wrap",
                             imgClass: "cont_image",
-                            imgSrc: "img/category.png",
+                            imgSrc: businesses[i].cat_pic[0],
                             titleClass: "articles_main_title",
                             mainTitle: businesses[i].cat_name,
                             descriptionClass: "main_article_description",

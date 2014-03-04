@@ -4,7 +4,7 @@
 var gallery_page = {
     loadPage: function(gallery_id) {
         var articlesPageContent =
-            viewsFactory.header({title: 'נתיבות <span style="color:#00a6ed;">Online</span>',page_content_class: 'gallery_page_content',content_scroll_id:'gallery_page_main_content', backButton:true, title_id: 'gallery_page_title_id'})+
+            viewsFactory.header({page_content_class: 'gallery_page_content',content_scroll_id:'gallery_page_main_content', backButton:true, title_id: 'gallery_page_title_id'})+
                 viewsFactory.footer({id:"galleries_footer"});
         (function() {
             // api address
@@ -17,7 +17,7 @@ var gallery_page = {
                 {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
-                    console.log(jsonAfterParse.name);
+                    document.getElementById('gallery_page_title_id').innerHTML = jsonAfterParse.name;
                     var bodyTextToAppend='<div id="gallery_second_title">'+jsonAfterParse.name+'</div>'+
                         '<div class="line_sep"></div>'+
                         '<div class="main_gallery_content">';

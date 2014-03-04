@@ -6,11 +6,14 @@
     height: 45px;
     line-height: 45px;
     overflow: hidden;
-    position: absolute;
-    right: 45px;
-    left: 45px;
-    top: 0px;
-    bottom: 0px;
+}
+
+#main_title
+{
+    background-image: url("../img/icon.png");
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: 47% 50%;
 }
 
 .nav_bar_background
