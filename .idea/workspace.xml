@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/utils/function.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/utils/function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
     </list>
     <ignored path="NetivotiApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,7 +122,7 @@
       <file leaf-file-name="function.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/function.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="23" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.42562592" vertical-offset="566" max-vertical-offset="1920">
+            <state line="59" column="26" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.359352" vertical-offset="611" max-vertical-offset="1920">
               <folding>
                 <element signature="n#!!doc;n#getCatNameByID#0" expanded="false" />
               </folding>
@@ -907,7 +906,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/function.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="23" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.42562592" vertical-offset="566" max-vertical-offset="1920">
+        <state line="59" column="26" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.359352" vertical-offset="611" max-vertical-offset="1920">
           <folding>
             <element signature="n#!!doc;n#getCatNameByID#0" expanded="false" />
           </folding>
