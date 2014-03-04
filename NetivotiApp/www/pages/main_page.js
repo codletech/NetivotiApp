@@ -10,6 +10,7 @@ var mainPageContent =
     '<div id="main_page_content"></div>'+
     viewsFactory.footer({id:'main_footer'});
 
+
 /*
     ------------------------ Html injection functions --------------------------
     -- get data from netivoti server through json , parse it and inject it to --
@@ -169,6 +170,7 @@ var mainPageContent =
             app.container.clientHeight;
 
             touchScroll('main_page_content_scroller');
+            touchScrollX('galleries_row_scroller');
             /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
                 bounce:false,
                 scrollbars: true
