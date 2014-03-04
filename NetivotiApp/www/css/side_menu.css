@@ -141,6 +141,15 @@
     background-position: 100%;
 }
 
+#website_button
+{
+    background-color: #47a937;
+    background-image: url('../img/Add-Earth-128.png');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
 #info_button
 {
     background-color: rgb(184, 50, 50);

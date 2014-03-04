@@ -33,6 +33,7 @@ var single_subcategory = {
                             mail: businesses[i].mail,
                             address: businesses[i].address,
                             facebook: businesses[i].facebook,
+                            website: businesses[i].website,
                             description: businesses[i].description,
                             titleClass: "articles_main_title",
                             mainTitle: businesses[i].name,

@@ -7,7 +7,7 @@
 var direct_contact_page = {
     loadPage: function() {
         var direct_contact_page_contents =
-            viewsFactory.header({title: 'קשר ישיר',page_content_class: 'page_content direct_contact_page',content_scroll_id:'direct_contact_page_main_content', backButton:true, title_id: 'direct_contact_page_title_id'})+
+            viewsFactory.header({page_content_class: 'page_content direct_contact_page',content_scroll_id:'direct_contact_page_main_content', backButton:true, title_id: 'direct_contact_page_title_id'})+
                 viewsFactory.footer({id:"direct_contact_footer"});
         var direct_contact_initial_function = (function() {
 
