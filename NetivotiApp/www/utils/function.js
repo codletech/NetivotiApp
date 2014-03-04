@@ -57,7 +57,7 @@ function isTouchDevice()
 }
 
 function touchScroll(id){
-    if(isTouchDevice()) //&& crappyDevice())
+    if(isTouchDevice() && crappyDevice())
     { //if touch events exist and there is a scroll promblem - only android under 2.3
         var el=document.getElementById(id);
         var scrollStartPos=0;
@@ -74,23 +74,6 @@ function touchScroll(id){
     }
 }
 
-function touchScrollX(id){
-    if(isTouchDevice()) //&& crappyDevice())
-    { //if touch events exist and there is a scroll promblem - only android under 2.3
-        var el=document.getElementById(id);
-        var scrollStartPos=0;
-
-        document.getElementById(id).addEventListener("touchstart", function(event) {
-            scrollStartPos=this.scrollTop+event.touches[0].pageX;
-            event.preventDefault();
-        },false);
-
-        document.getElementById(id).addEventListener("touchmove", function(event) {
-            this.scrollTop=scrollStartPos-event.touches[0].pageX;
-            event.preventDefault();
-        },false);
-    }
-}
 
 function loadAdToStrip(divID)
 {
