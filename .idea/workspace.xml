@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css" afterPath="$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/css/main_style.css" afterPath="$PROJECT_DIR$/NetivotiApp/www/css/main_style.css" />
     </list>
     <ignored path="NetivotiApp.iws" />
@@ -58,7 +57,7 @@
       <file leaf-file-name="main_style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/main_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="16" selection-start="3026" selection-end="3026" vertical-scroll-proportion="0.47297296" vertical-offset="1845" max-vertical-offset="4245">
+            <state line="140" column="1" selection-start="2950" selection-end="2950" vertical-scroll-proportion="0.4054054" vertical-offset="1830" max-vertical-offset="4230">
               <folding />
             </state>
           </provider>
@@ -903,7 +902,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/main_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="16" selection-start="3026" selection-end="3026" vertical-scroll-proportion="0.47297296" vertical-offset="1845" max-vertical-offset="4245">
+        <state line="140" column="1" selection-start="2950" selection-end="2950" vertical-scroll-proportion="0.4054054" vertical-offset="1830" max-vertical-offset="4230">
           <folding />
         </state>
       </provider>
