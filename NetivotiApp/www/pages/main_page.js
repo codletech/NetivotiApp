@@ -169,7 +169,7 @@ var mainPageContent =
             app.container.clientHeight;
 
             touchScroll('main_page_content_scroller');
-
+            document.getElementById('galleries_row_scroller').innerHTML+="";
             /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
                 bounce:false,
                 scrollbars: true
