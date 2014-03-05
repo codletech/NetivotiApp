@@ -6,10 +6,10 @@
     display: inline-block;
     width: 100%;
     position: relative;
-    height: 100px;
+    height: 60px;
     background-repeat: no-repeat !important;
     background-position: 99% !important;
-    background-size: 80px;
+    background-size: 55px;
     margin: 0;
     padding: 0;
 }
@@ -40,7 +40,7 @@
 
 .biz_cat_content_container
 {
-    margin: 40px 100px;
+    margin: 23px 88px;
 }
 .biz_subcat_content_container
 {

@@ -75,7 +75,7 @@
     position: relative;
     height: 100px;
     background-repeat: no-repeat !important;
-    background-position: 100% , 1% 50%;
+    background-position: 100% , 2% 50%;
     background-size: 100px, 10px;
     margin: 0;
     padding: 0;
@@ -93,7 +93,7 @@
     position: relative;
     height: 104px;
     background-repeat: no-repeat !important;
-    background-position: 100% , 1% 50%;
+    background-position: 100% , 2% 50%;
     background-size: 100px, 10px;
     margin: 0;
     padding: 0;
