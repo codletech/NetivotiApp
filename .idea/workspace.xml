@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css" afterPath="$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/css/main_style.css" afterPath="$PROJECT_DIR$/NetivotiApp/www/css/main_style.css" />
     </list>
     <ignored path="NetivotiApp.iws" />
@@ -54,19 +55,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main_style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/main_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="1" selection-start="2950" selection-end="2950" vertical-scroll-proportion="0.4054054" vertical-offset="1830" max-vertical-offset="4230">
+            <state line="141" column="22" selection-start="2973" selection-end="2973" vertical-scroll-proportion="0.0" vertical-offset="1605" max-vertical-offset="4245">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="biz_categories.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="biz_categories.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="19" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="945">
+            <state line="41" column="1" selection-start="819" selection-end="819" vertical-scroll-proportion="0.640648" vertical-offset="180" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -163,8 +164,8 @@
         <option value="$PROJECT_DIR$/NetivotiApp/www/css/side_menu.css" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/function.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/css/main_style.css" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css" />
       </list>
     </option>
   </component>
@@ -893,16 +894,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css">
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/main_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="19" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="945">
+        <state line="141" column="22" selection-start="2973" selection-end="2973" vertical-scroll-proportion="0.0" vertical-offset="1605" max-vertical-offset="4245">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/main_style.css">
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="1" selection-start="2950" selection-end="2950" vertical-scroll-proportion="0.4054054" vertical-offset="1830" max-vertical-offset="4230">
+        <state line="41" column="1" selection-start="819" selection-end="819" vertical-scroll-proportion="0.640648" vertical-offset="180" max-vertical-offset="900">
           <folding />
         </state>
       </provider>

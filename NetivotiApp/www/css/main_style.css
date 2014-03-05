@@ -139,6 +139,7 @@
 }
 .articles_main_title
 {
+    margin: 20px 80px;
     font-size: 13px;
     font-weight: bold;
     width: 100%;

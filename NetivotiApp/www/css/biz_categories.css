@@ -40,10 +40,7 @@
 
 .biz_cat_content_container
 {
-    position: absolute;
-    top: 40%;
-    right: 6%;
-    display: block;
+    display: inline-block;
 }
 .biz_subcat_content_container
 {
