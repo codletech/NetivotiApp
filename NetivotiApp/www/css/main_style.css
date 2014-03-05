@@ -142,6 +142,7 @@
     margin: 0;
     font-size: 13px;
     font-weight: bold;
+    width: 100%;
 }
 .main_article_description {
     display: inline-block;
