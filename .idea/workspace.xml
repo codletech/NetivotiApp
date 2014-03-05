@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NetivotiApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,9 +28,9 @@
       <file leaf-file-name="main_page.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="76" selection-start="8397" selection-end="8397" vertical-scroll-proportion="0.334375" vertical-offset="2351" max-vertical-offset="3510">
+            <state line="176" column="17" selection-start="8641" selection-end="8641" vertical-scroll-proportion="0.4140625" vertical-offset="2375" max-vertical-offset="3690">
               <folding>
-                <marker date="1394020257000" expanded="false" signature="1397:1425" placeholder="..." />
+                <marker date="1394020484000" expanded="false" signature="1397:1425" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -578,7 +577,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="20" selection-start="3874" selection-end="3875" vertical-scroll-proportion="0.0" vertical-offset="1221" max-vertical-offset="3087">
           <folding>
-            <marker date="1394020257000" expanded="false" signature="1397:1425" placeholder="..." />
+            <marker date="1394020484000" expanded="false" signature="1397:1425" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -901,9 +900,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="76" selection-start="8397" selection-end="8397" vertical-scroll-proportion="0.334375" vertical-offset="2351" max-vertical-offset="3510">
+        <state line="176" column="17" selection-start="8641" selection-end="8641" vertical-scroll-proportion="0.4140625" vertical-offset="2375" max-vertical-offset="3690">
           <folding>
-            <marker date="1394020257000" expanded="false" signature="1397:1425" placeholder="..." />
+            <marker date="1394020484000" expanded="false" signature="1397:1425" placeholder="..." />
           </folding>
         </state>
       </provider>
