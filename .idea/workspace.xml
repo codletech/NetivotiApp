@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css" afterPath="$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/css/main_style.css" afterPath="$PROJECT_DIR$/NetivotiApp/www/css/main_style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NetivotiApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,19 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main_style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/main_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="15" selection-start="3025" selection-end="3025" vertical-scroll-proportion="0.47297296" vertical-offset="1845" max-vertical-offset="4245">
+            <state line="144" column="15" selection-start="3025" selection-end="3025" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="4245">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="biz_categories.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="biz_categories.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="19" selection-start="93" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+            <state line="42" column="18" selection-start="845" selection-end="845" vertical-scroll-proportion="0.72901326" vertical-offset="135" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -165,8 +163,8 @@
         <option value="$PROJECT_DIR$/NetivotiApp/www/css/side_menu.css" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/function.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/css/main_style.css" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css" />
       </list>
     </option>
   </component>
@@ -895,16 +893,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css">
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/main_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="93" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+        <state line="144" column="15" selection-start="3025" selection-end="3025" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="4245">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/main_style.css">
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/biz_categories.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="15" selection-start="3025" selection-end="3025" vertical-scroll-proportion="0.47297296" vertical-offset="1845" max-vertical-offset="4245">
+        <state line="42" column="18" selection-start="845" selection-end="845" vertical-scroll-proportion="0.72901326" vertical-offset="135" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
