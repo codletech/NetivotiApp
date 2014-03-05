@@ -17,7 +17,10 @@ function href(link)
 
 function goToMainPage()
 {
-    cPages.moveToPage(app.container, "main", cPages.directions.left);
+    if (cPages.get("main").vars.isMenuPage != 1)
+    {
+        cPages.moveToPage(app.container, "main", cPages.directions.left);
+    }
 }
 /***
  Slide Side Menu.
@@ -32,14 +35,14 @@ var side_menu = {
         this.content =
             '<div id="side_menu_container" class="side_menu_hidden">'+
             '<div class="menu_button" onclick="side_menu.showOrHide(function(){ goToMainPage(); });">ראשי</div>'+
-            '<div id="side_menu_business_button" class="menu_button" onclick="side_menu.showOrHide(function(){main_biz_categories.loadPage();});">עסקים</div>'+
-            '<div id="side_menu_direct_contact_button" class="menu_button" onclick="side_menu.showOrHide(function(){direct_contact_page.loadPage();});">קשר ישיר</div>'+
+            '<div id="side_menu_business_button" class="menu_button" onclick="side_menu.showOrHide(function(){main_biz_categories.loadPage(); cPages.get(\'main\').vars.isMenuPage = 0; });">עסקים</div>'+
+            '<div id="side_menu_direct_contact_button" class="menu_button" onclick="side_menu.showOrHide(function(){direct_contact_page.loadPage(); cPages.get(\'main\').vars.isMenuPage = 0; });">קשר ישיר</div>'+
             '<div id="side_menu_app_content" class="menu_button" onclick="showHideSubMenu(\'side_menu_app_content_sub_menu\')">תוכן האפליקציה</div>'+
             '<div id="side_menu_app_content_sub_menu" class="menu_hidden_container">'+
-                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(2);});">חדשות</div>'+
-                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(3);});">המגזין</div>'+
-                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){galleries_archive_page.loadPage(9);});">גלריות</div>'+
-                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(190);});">מה קורה בעיר</div>'+
+                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(2); cPages.get(\'main\').vars.isMenuPage = 0; });">חדשות</div>'+
+                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(3); cPages.get(\'main\').vars.isMenuPage = 0; });">המגזין</div>'+
+                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){galleries_archive_page.loadPage(9); cPages.get(\'main\').vars.isMenuPage = 0; });">גלריות</div>'+
+                '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(190); cPages.get(\'main\').vars.isMenuPage = 0; });">מה קורה בעיר</div>'+
             '</div>'+
             '<div id="side_menu_app_content" class="menu_button" onclick="showHideSubMenu(\'side_menu_contact_sub_menu\')">צור קשר / פרסם כאן</div>'+
             '<div id="side_menu_contact_sub_menu" class="menu_hidden_container">'+

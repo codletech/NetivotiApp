@@ -25,7 +25,6 @@ var mainPageContent =
     ============================================================================
  */
 (function() {
-
     // api address
     var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_main_page_data.php";
     var xmlhttp = new XMLHttpRequest();
@@ -190,6 +189,7 @@ var mainPageContent =
 
 
 var mainRefreshFunction = function() {
+    cPages.get("main").vars.isMenuPage = 1;
     var slider = document.getElementById('netivoti_main_slider');
     var sliderContent = document.getElementById("netivoti_main_slider_content");
     if (slider && sliderContent) {

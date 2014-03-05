@@ -17,7 +17,7 @@ archive_page = {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
-                    document.getElementById('articles_page_title_id' + cat_id).innerHTML = jsonAfterParse.name;
+                    //document.getElementById('articles_page_title_id' + cat_id).innerHTML = jsonAfterParse.name;
                     var bodyTextToAppend = '';
                     var articles = jsonAfterParse.articles;
                     for (var i = 0; i < articles.length; i++) {

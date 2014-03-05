@@ -19,7 +19,7 @@ var main_biz_categories = {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
                     console.log(jsonAfterParse.name);
-                    document.getElementById('biz_cat_page_title_id').innerHTML = "עסקים";
+                    //document.getElementById('biz_cat_page_title_id').innerHTML = "עסקים";
                     var bodyTextToAppend='';
                     var businesses = jsonAfterParse.businesses;
                     for (var i=0;i<businesses.length;i++)

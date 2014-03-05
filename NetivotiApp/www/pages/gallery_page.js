@@ -17,7 +17,7 @@ var gallery_page = {
                 {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
-                    document.getElementById('gallery_page_title_id').innerHTML = jsonAfterParse.name;
+                    //document.getElementById('gallery_page_title_id').innerHTML = jsonAfterParse.name;
                     var bodyTextToAppend='<div id="gallery_second_title">'+jsonAfterParse.name+'</div>'+
                         '<div class="line_sep"></div>'+
                         '<div class="main_gallery_content">';

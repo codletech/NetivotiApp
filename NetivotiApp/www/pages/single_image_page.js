@@ -11,7 +11,7 @@ var single_image_page = {
                 viewsFactory.footer({id:"single_image_footer"});
         var initial_function = (function()
         {
-            document.getElementById('single_image_page_title_id').innerHTML = name;
+            //document.getElementById('single_image_page_title_id').innerHTML = name;
             loadAdToStrip('single_image_footer');
             touchScroll('gallery_page_main_content');
         });

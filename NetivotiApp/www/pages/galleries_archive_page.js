@@ -19,7 +19,7 @@ var galleries_archive_page = {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
                     console.log(jsonAfterParse.name);
-                    document.getElementById('galleries_archive_page_title_id'+cat_id).innerHTML = jsonAfterParse.name;
+                    //document.getElementById('galleries_archive_page_title_id'+cat_id).innerHTML = jsonAfterParse.name;
                     var bodyTextToAppend='';
                     var articles = jsonAfterParse.articles;
                     for (var i=0;i<articles.length;i++)
