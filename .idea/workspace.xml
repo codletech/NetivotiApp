@@ -28,9 +28,9 @@
       <file leaf-file-name="main_page.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="17" selection-start="8641" selection-end="8641" vertical-scroll-proportion="0.4140625" vertical-offset="2375" max-vertical-offset="3690">
+            <state line="215" column="37" selection-start="9765" selection-end="9765" vertical-scroll-proportion="1.234375" vertical-offset="2435" max-vertical-offset="3510">
               <folding>
-                <marker date="1394020484000" expanded="false" signature="1397:1425" placeholder="..." />
+                <marker date="1394020590000" expanded="false" signature="1397:1425" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -577,7 +577,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="20" selection-start="3874" selection-end="3875" vertical-scroll-proportion="0.0" vertical-offset="1221" max-vertical-offset="3087">
           <folding>
-            <marker date="1394020484000" expanded="false" signature="1397:1425" placeholder="..." />
+            <marker date="1394020590000" expanded="false" signature="1397:1425" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -900,9 +900,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="17" selection-start="8641" selection-end="8641" vertical-scroll-proportion="0.4140625" vertical-offset="2375" max-vertical-offset="3690">
+        <state line="215" column="37" selection-start="9765" selection-end="9765" vertical-scroll-proportion="1.234375" vertical-offset="2435" max-vertical-offset="3510">
           <folding>
-            <marker date="1394020484000" expanded="false" signature="1397:1425" placeholder="..." />
+            <marker date="1394020590000" expanded="false" signature="1397:1425" placeholder="..." />
           </folding>
         </state>
       </provider>

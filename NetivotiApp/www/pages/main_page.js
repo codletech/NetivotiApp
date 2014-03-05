@@ -168,18 +168,6 @@ var mainPageContent =
             }
             app.container.clientHeight;
 
-            var slider = document.getElementById('netivoti_main_slider');
-            var sliderContent = document.getElementById("netivoti_main_slider_content");
-            if (slider && sliderContent)
-            {
-                if (cPages.get("main").vars.sliderData) {
-                    sliderContent.innerHTML = cPages.get("main").vars.sliderData;
-                }
-                else {
-                    sliderContent.innerHTML = "";
-                }
-            }
-
             touchScroll('main_page_content_scroller');
 
             /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
