@@ -75,9 +75,9 @@
       <file leaf-file-name="side_menu.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/side_menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="141" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.3918919" vertical-offset="504" max-vertical-offset="1620">
+            <state line="58" column="48" selection-start="3429" selection-end="3429" vertical-scroll-proportion="0.5945946" vertical-offset="474" max-vertical-offset="1620">
               <folding>
-                <marker date="1394029153000" expanded="false" signature="3241:3254" placeholder="..." />
+                <marker date="1394029339000" expanded="false" signature="3248:3261" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -900,9 +900,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/side_menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="141" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.3918919" vertical-offset="504" max-vertical-offset="1620">
+        <state line="58" column="48" selection-start="3429" selection-end="3429" vertical-scroll-proportion="0.5945946" vertical-offset="474" max-vertical-offset="1620">
           <folding>
-            <marker date="1394029153000" expanded="false" signature="3241:3254" placeholder="..." />
+            <marker date="1394029339000" expanded="false" signature="3248:3261" placeholder="..." />
           </folding>
         </state>
       </provider>

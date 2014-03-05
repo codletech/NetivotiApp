@@ -48,7 +48,7 @@ var side_menu = {
             '<div id="side_menu_contact_sub_menu" class="menu_hidden_container">'+
                 '<div class="menu_sub_button side_menu_contact_links" id="call_now_button" onclick="href(\'tel:+0536222833\')">חייג עכשיו</div>'+
                 '<div class="menu_sub_button side_menu_contact_links" id="send_mail_button" onclick="href(\'mailto:NETIVOTP@GMAIL.COM\')">שלח מייל</div>'+
-                '<div class="menu_sub_button side_menu_contact_links" id="address_button" onclick=\"href(\'http://maps.google.com/maps?q=הארזים 84, נתיבות\')\">נתיבות, גבעת שפרה 14</div>'+
+                '<div class="menu_sub_button side_menu_contact_links" id="address_button" onclick=\"href(\'http://maps.google.com/maps?q=HaArazim 84, Netivot, Israel\')\">הארזים 84 נתיבות</div>'+
                 '<div class="menu_sub_button side_menu_contact_links" id="facebook_button" onclick=\"href(\'https://www.facebook.com/netivotp\')\">עמוד הפייסבוק שלנו</div>'+
             '</div>'+
             '</div>'+
