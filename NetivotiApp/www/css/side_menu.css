@@ -1,5 +1,6 @@
 #side_menu_container {
     width: 60%;
+    height: 100%;
     z-index: 100000;
     position: absolute;
     top: 60px;
