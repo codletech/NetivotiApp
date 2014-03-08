@@ -33,7 +33,7 @@ viewsFactory = {
 
     header: function(options) {
         var header_str = (options.isWithAdd ? '<div class="main_ad_netivoti" id="main_ad_netivoti_id"></div>' : '') +'<div class="page_header">'+
-            '<div class="nav_bar_background"><div class="main_menu_button" onclick="side_menu.showOrHide();"></div><div class="top_title" id='+(options.title_id || "main_title")+'>'+(options.title || "" )+'</div></div>'+
+            '<div class="nav_bar_background"><div class="main_menu_button" id="menu_button_click_id" onclick="side_menu.showOrHide();"></div><div class="top_title" id='+(options.title_id || "main_title")+'>'+(options.title || "" )+'</div></div>'+
             (options.backButton ?
                 '<div class="back_button" onclick="cPages.moveBack(app.container)"></div>' : '') +
             '<div id="main_top_row_div"></div>'+

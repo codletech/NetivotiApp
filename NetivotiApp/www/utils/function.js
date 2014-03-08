@@ -114,7 +114,10 @@ function loadMainAD(divID)
             page_ad.style.backgroundRepeat = "no-repeat";
             setTimeout(function(){
                 page_ad.parentNode.removeChild(page_ad);
-                cPages.moveToPage(app.container, "main", cPages.directions.left);
+                setTimeout(function(){
+                    document.getElementById('menu_button_click_id').click();
+                    document.getElementById('menu_button_click_id').click();
+                },1000);
             },4000);
         }
     }

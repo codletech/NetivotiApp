@@ -190,47 +190,41 @@ var mainPageContent =
 
 
 var mainRefreshFunction = function() {
-
+    cPages.get("main").vars.isMenuPage = 1;
     var slider = document.getElementById('netivoti_main_slider');
     var sliderContent = document.getElementById("netivoti_main_slider_content");
 
-    if(cPages.get("main").vars.isMenuPage != 1)
-    {
-        console.log('tal');
-        if (slider && sliderContent) {
-            if (cPages.get("main").vars.sliderData) {
-                sliderContent.innerHTML = cPages.get("main").vars.sliderData;
-            }
-            else {
-                sliderContent.innerHTML = "";
-            }
-            var bullets = document.getElementById('position').getElementsByTagName('li');
-            cPages.get("main").vars.mySwiper = new Swipe(slider,{
-                continuous: true,
-                auto: 2000,
-                callback: function(pos) {
-
-                    var i = bullets.length;
-                    while (i--) {
-                        bullets[i].className = ' ';
-                    }
-                    bullets[pos].className = 'on';
-
-                }
-            });
-            touchScroll('main_page_content_scroller');
-            /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
-                bounce:false,
-                scrollbars: true
-            });
-            cPages.get("main").vars.galleriesScroll = new IScroll('#galleries_row_scroller',{
-                bounce:false,
-                scrollX:true
-            });*/
+    if (slider && sliderContent) {
+        if (cPages.get("main").vars.sliderData) {
+            sliderContent.innerHTML = cPages.get("main").vars.sliderData;
         }
-    }
+        else {
+            sliderContent.innerHTML = "";
+        }
+        var bullets = document.getElementById('position').getElementsByTagName('li');
+        cPages.get("main").vars.mySwiper = new Swipe(slider,{
+            continuous: true,
+            auto: 2000,
+            callback: function(pos) {
 
-    cPages.get("main").vars.isMenuPage = 1;
+                var i = bullets.length;
+                while (i--) {
+                    bullets[i].className = ' ';
+                }
+                bullets[pos].className = 'on';
+
+            }
+        });
+        touchScroll('main_page_content_scroller');
+        /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
+            bounce:false,
+            scrollbars: true
+        });
+        cPages.get("main").vars.galleriesScroll = new IScroll('#galleries_row_scroller',{
+            bounce:false,
+            scrollX:true
+        });*/
+    }
 
 }
 cPages.addPage("main",mainPageContent,null,mainRefreshFunction);
