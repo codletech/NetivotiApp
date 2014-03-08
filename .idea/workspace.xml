@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/css/side_menu.css" afterPath="$PROJECT_DIR$/NetivotiApp/www/css/side_menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
     </list>
     <ignored path="NetivotiApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,6 +43,17 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main_page.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="28" selection-start="6337" selection-end="6337" vertical-scroll-proportion="1.6317365" vertical-offset="890" max-vertical-offset="3555">
+              <folding>
+                <marker date="1394309544000" expanded="false" signature="1427:1455" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="single_category.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/single_category.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,19 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="side_menu.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="side_menu.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/side_menu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="16" selection-start="55" selection-end="55" vertical-scroll-proportion="0.04491018" vertical-offset="0" max-vertical-offset="2490">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="direct_contact_page.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/direct_contact_page.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="59" selection-start="3031" selection-end="3031" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1080">
+            <state line="22" column="21" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="2490">
               <folding />
             </state>
           </provider>
@@ -144,7 +146,6 @@
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/pages_manager.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/index.html" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/css/titles.css" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/views_factory.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/function.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/side_menu.js" />
@@ -160,6 +161,7 @@
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/single_image_page.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/config.xml" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/css/side_menu.css" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js" />
       </list>
     </option>
   </component>
@@ -726,15 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="60" selection-start="9455" selection-end="9455" vertical-scroll-proportion="0.0" vertical-offset="2825" max-vertical-offset="3540">
-          <folding>
-            <marker date="1394282180000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/function.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="119" column="23" selection-start="3654" selection-end="3654" vertical-scroll-proportion="0.0" vertical-offset="1331" max-vertical-offset="2040">
@@ -869,8 +862,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/side_menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="55" selection-end="55" vertical-scroll-proportion="0.04491018" vertical-offset="0" max-vertical-offset="2490">
+        <state line="22" column="21" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="2490">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/main_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="28" selection-start="6337" selection-end="6337" vertical-scroll-proportion="1.6317365" vertical-offset="890" max-vertical-offset="3555">
+          <folding>
+            <marker date="1394309544000" expanded="false" signature="1427:1455" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
