@@ -54,6 +54,7 @@ var direct_contact_page = {
 
                     loadAdToStrip('direct_contact_footer');
                     touchScroll('direct_contact_page_main_content');
+                    cPages.get('main').vars.isMenuPage = 0;
                 }
             }
             // open the connection using get method and send it

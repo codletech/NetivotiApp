@@ -54,6 +54,7 @@ var links_page = {
 
                     loadAdToStrip('links_footer');
                     touchScroll('links_main_content');
+                    cPages.get('main').vars.isMenuPage = 0;
                 }
             }
             // open the connection using get method and send it

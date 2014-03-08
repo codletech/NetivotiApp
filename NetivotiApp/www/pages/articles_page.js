@@ -27,6 +27,7 @@ var article_page = {
                     document.getElementById('article_page_main_content').clientHeight;
                     loadAdToStrip('article_footer');
                     touchScroll('article_page_main_content');
+                    cPages.get('main').vars.isMenuPage = 0;
                 }
             }
 

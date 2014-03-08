@@ -38,6 +38,7 @@ var biz_subcategories = {
                     document.getElementById('biz_subcat_page_main_content').innerHTML = bodyTextToAppend;
                     loadAdToStrip('biz_subcat_footer');
                     touchScroll('biz_subcat_page_main_content');
+                    cPages.get('main').vars.isMenuPage = 0;
                 }
             }
             // open the connection using get method and send it

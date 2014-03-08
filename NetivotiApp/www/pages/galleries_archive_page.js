@@ -40,6 +40,7 @@ var galleries_archive_page = {
                     document.getElementById('galleries_archive_page_main_content'+cat_id).innerHTML = bodyTextToAppend;
                     loadAdToStrip('galleries_archive_footer');
                     touchScroll('galleries_archive_page_main_content');
+                    cPages.get('main').vars.isMenuPage = 0;
                 }
             }
             // open the connection using get method and send it

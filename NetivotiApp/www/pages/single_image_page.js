@@ -14,6 +14,7 @@ var single_image_page = {
             //document.getElementById('single_image_page_title_id').innerHTML = name;
             loadAdToStrip('single_image_footer');
             touchScroll('gallery_page_main_content');
+            cPages.get('main').vars.isMenuPage = 0;
         });
 
         cPages.addPage("single_image_page",single_image_page_content);

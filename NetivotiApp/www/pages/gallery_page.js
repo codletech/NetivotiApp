@@ -30,6 +30,7 @@ var gallery_page = {
                     document.getElementById('gallery_page_main_content').innerHTML = bodyTextToAppend;
                     loadAdToStrip('galleries_footer');
                     touchScroll('gallery_page_main_content');
+                    cPages.get('main').vars.isMenuPage = 0;
                 }
             }
             // open the connection using get method and send it
