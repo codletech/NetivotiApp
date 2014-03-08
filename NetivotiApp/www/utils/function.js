@@ -114,6 +114,7 @@ function loadMainAD(divID)
             page_ad.style.backgroundRepeat = "no-repeat";
             setTimeout(function(){
                 page_ad.parentNode.removeChild(page_ad);
+                cPages.moveToPage(app.container, "main", cPages.directions.left);
             },4000);
         }
     }
@@ -121,4 +122,6 @@ function loadMainAD(divID)
     xmlhttp.open("GET",netivotiAPI,true);
     xmlhttp.send();
 }
+
+
 

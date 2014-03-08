@@ -34,7 +34,7 @@ var mainPageContent =
         {
             var cats_divs = {0:'',1:'',2:'',3:'', 4:'',5:''};
             var zeroOrOne=0;
-            cats_divs[5]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 770px; height: 220px;'>";
+            cats_divs[5]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div id=\"galleries_scroller_div\" style='width: 770px; height: 220px;'>";
             var index = 0;
             //parse the response to json
             var categories_data = JSON.parse(xmlhttp.responseText);
@@ -170,6 +170,7 @@ var mainPageContent =
 
             touchScroll('main_page_content_scroller');
 
+
             /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
                 bounce:false,
                 scrollbars: true
@@ -189,40 +190,47 @@ var mainPageContent =
 
 
 var mainRefreshFunction = function() {
-    cPages.get("main").vars.isMenuPage = 1;
+
     var slider = document.getElementById('netivoti_main_slider');
     var sliderContent = document.getElementById("netivoti_main_slider_content");
-    if (slider && sliderContent) {
-        if (cPages.get("main").vars.sliderData) {
-            sliderContent.innerHTML = cPages.get("main").vars.sliderData;
-        }
-        else {
-            sliderContent.innerHTML = "";
-        }
-        var bullets = document.getElementById('position').getElementsByTagName('li');
-        cPages.get("main").vars.mySwiper = new Swipe(slider,{
-            continuous: true,
-            auto: 2000,
-            callback: function(pos) {
 
-                var i = bullets.length;
-                while (i--) {
-                    bullets[i].className = ' ';
-                }
-                bullets[pos].className = 'on';
-
+    if(cPages.get("main").vars.isMenuPage != 1)
+    {
+        console.log('tal');
+        if (slider && sliderContent) {
+            if (cPages.get("main").vars.sliderData) {
+                sliderContent.innerHTML = cPages.get("main").vars.sliderData;
             }
-        });
-        touchScroll('main_page_content_scroller');
-        /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
-            bounce:false,
-            scrollbars: true
-        });
-        cPages.get("main").vars.galleriesScroll = new IScroll('#galleries_row_scroller',{
-            bounce:false,
-            scrollX:true
-        });*/
+            else {
+                sliderContent.innerHTML = "";
+            }
+            var bullets = document.getElementById('position').getElementsByTagName('li');
+            cPages.get("main").vars.mySwiper = new Swipe(slider,{
+                continuous: true,
+                auto: 2000,
+                callback: function(pos) {
+
+                    var i = bullets.length;
+                    while (i--) {
+                        bullets[i].className = ' ';
+                    }
+                    bullets[pos].className = 'on';
+
+                }
+            });
+            touchScroll('main_page_content_scroller');
+            /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
+                bounce:false,
+                scrollbars: true
+            });
+            cPages.get("main").vars.galleriesScroll = new IScroll('#galleries_row_scroller',{
+                bounce:false,
+                scrollX:true
+            });*/
+        }
     }
+
+    cPages.get("main").vars.isMenuPage = 1;
 
 }
 cPages.addPage("main",mainPageContent,null,mainRefreshFunction);
