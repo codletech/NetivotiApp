@@ -38,7 +38,7 @@ var side_menu = {
             '<div id="side_menu_business_button" class="menu_button" onclick="side_menu.showOrHide(function(){main_biz_categories.loadPage(); cPages.get(\'main\').vars.isMenuPage = 0; });">עסקים</div>'+
             '<div id="side_menu_direct_contact_button" class="menu_button" onclick="side_menu.showOrHide(function(){direct_contact_page.loadPage(); cPages.get(\'main\').vars.isMenuPage = 0; });">קשר ישיר</div>'+
                 '<div id="side_menu_direct_contact_button" class="menu_button" onclick="side_menu.showOrHide(function(){links_page.loadPage(); cPages.get(\'main\').vars.isMenuPage = 0; });">תשלומים</div>'+
-            '<div id="side_menu_app_content" class="menu_button" onclick="showHideSubMenu(\'side_menu_app_content_sub_menu\')">תוכן האפליקציה</div>'+
+            '<div id="side_menu_app_content" class="menu_button" onclick="side_menu.showOrHide(function(){app_content_page.loadPage();})">תוכן האפליקציה</div>'+
             '<div id="side_menu_app_content_sub_menu" class="menu_hidden_container">'+
                 '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(2); cPages.get(\'main\').vars.isMenuPage = 0; });">חדשות</div>'+
                 '<div class="menu_sub_button" onclick="side_menu.showOrHide(function(){archive_page.loadPage(3); cPages.get(\'main\').vars.isMenuPage = 0; });">המגזין</div>'+
@@ -49,7 +49,6 @@ var side_menu = {
             '<div id="side_menu_contact_sub_menu" class="menu_hidden_container">'+
                 '<div class="menu_sub_button side_menu_contact_links" id="call_now_button" onclick="href(\'tel:+0536222833\')">חייג עכשיו</div>'+
                 '<div class="menu_sub_button side_menu_contact_links" id="send_mail_button" onclick="href(\'mailto:NETIVOTP@GMAIL.COM\')">שלח מייל</div>'+
-                '<div class="menu_sub_button side_menu_contact_links" id="address_button" onclick=\"href(\'http://maps.google.com/maps?q=HaArazim 84, Netivot, Israel\')\">הארזים 84 נתיבות</div>'+
                 '<div class="menu_sub_button side_menu_contact_links" id="facebook_button" onclick=\"href(\'https://www.facebook.com/netivotp\')\">עמוד הפייסבוק שלנו</div>'+
             '</div>'+
             '</div>'+

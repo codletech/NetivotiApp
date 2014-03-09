@@ -2,6 +2,13 @@
  * Created by tallevi on 27/02/14.
  */
 
+function PhoneGapMessage (message, title) {
+    if (navigator.notification) {
+        navigator.notification.alert(message, null, title, 'OK');
+    } else {
+        alert(title ? (title + ": " + message) : message);
+    }
+}
 
 function getCatNameByID(cat_id, divID)
 {
