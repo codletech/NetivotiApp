@@ -149,7 +149,8 @@ var mainPageContent =
                     speed : 500,
                     autoplay: 3000,
                     pagination: '.pagination',
-                    paginationClickable: true
+                    paginationClickable: true,
+                    autoplayDisableOnInteraction: false
                 });
             }
             app.container.clientHeight;
@@ -192,7 +193,8 @@ var mainRefreshFunction = function() {
             speed : 1000,
             autoplay: 3000,
             pagination: '.pagination',
-            paginationClickable: true
+            paginationClickable: true,
+            autoplayDisableOnInteraction: false
 
         });
         touchScroll('main_page_content_scroller');
