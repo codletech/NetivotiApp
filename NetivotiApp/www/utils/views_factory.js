@@ -45,3 +45,4 @@ viewsFactory = {
     footer: doT.template('</div><div class="page_footer" id="{{=it.id || \"\" }}"></div>')
 
 }
+ 
