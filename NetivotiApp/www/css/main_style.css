@@ -19,7 +19,7 @@
 .pagination {
     position: absolute;
     text-align: center;
-    z-index: 10000;
+    z-index: 1;
     bottom: 4px;
     left: 0;
     right: 0;
