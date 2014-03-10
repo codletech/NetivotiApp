@@ -16,6 +16,14 @@
     height:auto;
     width:100%;
 }
+.pagination {
+    position: absolute;
+    text-align: center;
+    z-index: 10000;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+}
 .mainSliderCaption {
     direction: rtl;
     display: inline-block;
