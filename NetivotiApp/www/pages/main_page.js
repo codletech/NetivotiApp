@@ -122,18 +122,9 @@ var mainPageContent =
             cats_divs[5]+="</div></div>";
             //Add the data to the view.
             var main_data =
-                '<div class="main_slider_top_container"><div class="swipe" id="netivoti_main_slider">'+
-                    '<div id="netivoti_main_slider_content" class="swipe-wrap">'+cats_divs[3]+' </div>'+
-                    '<div class="slider_circles">'+
-                        '<ul id="position">'+
-                            '<li class="on"></li>'+
-                            '<li></li>'+
-                            '<li></li>'+
-                            '<li></li>'+
-                            '<li></li>'+
-                        '</ul>'+
-                    '</div>'+
-                '</div></div>'+
+                '<div class="main_slider_top_container"><div class="swiper-container" id="netivoti_main_slider">'+
+                    '<div id="netivoti_main_slider_content" class="swiper-wrapper">'+cats_divs[3]+' </div>'+
+                '</div><div class="pagination"></div></div>'+
                 '<div id="news_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(2);">חדשות</div>'+cats_divs[0]+
                 '<div id="magazine_row" class="news_title_class title_bar_back" onclick="archive_page.loadPage(3);">המגזין</div>'+cats_divs[1]+
                 '<div id="gal_row" class="news_title_class title_bar_back" onclick="galleries_archive_page.loadPage(9);">גלריות</div>'+cats_divs[2]+
@@ -152,19 +143,13 @@ var mainPageContent =
                 sliderContent.clientHeight;
                 //Save the data
                 cPages.get("main").vars.sliderData = cats_divs[3];
-                var bullets = document.getElementById('position').getElementsByTagName('li');
-                cPages.get("main").vars.mySwiper = new Swipe(slider,{
-                    continuous: true,
-                    auto: 2000,
-                    callback: function(pos) {
-
-                        var i = bullets.length;
-                        while (i--) {
-                            bullets[i].className = ' ';
-                        }
-                        bullets[pos].className = 'on';
-
-                    }
+                //var bullets = document.getElementById('position').getElementsByTagName('li');
+                cPages.get("main").vars.mySwiper = new Swiper('#netivoti_main_slider',{
+                    loop:true,
+                    speed : 500,
+                    autoplay: 3000,
+                    pagination: '.pagination',
+                    paginationClickable: true
                 });
             }
             app.container.clientHeight;
@@ -202,19 +187,13 @@ var mainRefreshFunction = function() {
         else {
             sliderContent.innerHTML = "";
         }
-        var bullets = document.getElementById('position').getElementsByTagName('li');
-        cPages.get("main").vars.mySwiper = new Swipe(slider,{
-            continuous: true,
-            auto: 2000,
-            callback: function(pos) {
+        cPages.get("main").vars.mySwiper = new Swiper('#netivoti_main_slider',{
+            loop:true,
+            speed : 1000,
+            autoplay: 3000,
+            pagination: '.pagination',
+            paginationClickable: true
 
-                var i = bullets.length;
-                while (i--) {
-                    bullets[i].className = ' ';
-                }
-                bullets[pos].className = 'on';
-
-            }
         });
         touchScroll('main_page_content_scroller');
         /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{
