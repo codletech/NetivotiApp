@@ -58,8 +58,8 @@
 }
 .swiper-pagination-switch {
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
     border-radius: 8px;
     background: #555;
     margin-right: 5px;
