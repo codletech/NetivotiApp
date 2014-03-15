@@ -14,7 +14,7 @@ app = {
 };
 function onDeviceReady()
 {
-    alert('dvir hagever');
+    //alert('dvir hagever');
     var pushNotification;
     try
     {
@@ -59,22 +59,24 @@ function onNotificationAPN(e)
 // handle GCM notifications for Android
 function onNotificationGCM(e)
 {
+    alert(e.event);
+    alert(e.payload.message);
     switch( e.event )
     {
         case 'registered':
             if ( e.regid.length > 0 )
             {
-                alert("entering to pushwoosh");
+                //alert("entering to pushwoosh");
                 // Your GCM push server needs to know the regID before it can push to this device
                 // here is where you might want to send it the regID for later use.
                 PushWoosh.appCode = "94550-3136B";
                 PushWoosh.register(e.regid, function(data)
                 {
                     console.log("PushWoosh register success: " + JSON.stringify(data));
-                    alert("succeded");
+                    //alert("succeded");
                 }, function(errorregistration) {
                     console.log("Couldn't register with PushWoosh" +  errorregistration);
-                    alert("oh shit!");
+                    //alert("oh shit!");
                 });
 
             }
