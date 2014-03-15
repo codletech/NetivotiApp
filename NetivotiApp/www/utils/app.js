@@ -111,6 +111,5 @@ function errorHandler (error) {
 }
 
 
-document.addEventListener('deviceready', onDeviceReady, true);
 
 app.init();

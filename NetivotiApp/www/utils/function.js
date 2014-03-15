@@ -134,6 +134,7 @@ function loadMainAD(divID)
                     document.getElementById('menu_button_click_id').click();
                 setTimeout(function(){
                 document.getElementById('menu_button_click_id').click();
+                onDeviceReady();
                 },100);
             },4000);
         }
