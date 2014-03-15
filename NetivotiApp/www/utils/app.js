@@ -13,6 +13,7 @@ app = {
 
 };
 
+/*
 var pushNotification;
 
 // handle APNS notifications for iOS
@@ -106,6 +107,7 @@ function successHandler (result) {
 function errorHandler (error) {
     //$("#app-status-ul").append('<li>error:'+ error +'</li>');
 }
+*/
 
 
 
