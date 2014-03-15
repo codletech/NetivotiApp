@@ -36,7 +36,7 @@ var article_page = {
             xmlhttp.send();
 
         });
-        cPages.addPage("single_article_page",articlesPageContent,articlesInitFunction );
+        cPages.addPage("single_article_page",articlesPageContent,articlesInitFunction, touchScroll('article_page_main_content'));
         cPages.moveToPage(app.container,"single_article_page",cPages.directions.left);
     }
 }

@@ -37,7 +37,7 @@ var gallery_page = {
             xmlhttp.open("GET",netivotiAPI,true);
             xmlhttp.send();
         })();
-        cPages.addPage("single_gallery_page",articlesPageContent);
+        cPages.addPage("single_gallery_page",articlesPageContent,null, touchScroll('gallery_page_main_content'));
         cPages.moveToPage(app.container,"single_gallery_page",cPages.directions.left);
     }
 }

@@ -2,6 +2,7 @@
  Creates the categories page content.
  */
 var archive_page;
+
 archive_page = {
     loadPage: function (cat_id) {
         var archivePageContents =
@@ -44,7 +45,7 @@ archive_page = {
             xmlhttp.open("GET", netivotiAPI, true);
             xmlhttp.send();
         });
-        cPages.addPage("cur_archive_page" + cat_id, archivePageContents, initFunction);
+        cPages.addPage("cur_archive_page" + cat_id, archivePageContents, initFunction, touchScroll('articles_page_main_content'));
         cPages.moveToPage(app.container, "cur_archive_page" + cat_id, cPages.directions.left);
     }
 };

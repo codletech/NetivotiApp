@@ -45,7 +45,7 @@ var biz_subcategories = {
             xmlhttp.open("GET",netivotiAPI,true);
             xmlhttp.send();
         });
-        cPages.addPage("biz_sub_categories_page",biz_subcat_page_contents,biz_subcats_initial_function);
+        cPages.addPage("biz_sub_categories_page",biz_subcat_page_contents,biz_subcats_initial_function, touchScroll('biz_subcat_page_main_content'));
         cPages.moveToPage(app.container,"biz_sub_categories_page",cPages.directions.left);
     }
 }

@@ -61,7 +61,7 @@ var direct_contact_page = {
             xmlhttp.open("GET",netivotiAPI,true);
             xmlhttp.send();
         });
-        cPages.addPage("direct_contact_page",direct_contact_page_contents,direct_contact_initial_function);
+        cPages.addPage("direct_contact_page",direct_contact_page_contents,direct_contact_initial_function,touchScroll('direct_contact_page_main_content'));
         cPages.moveToPage(app.container,"direct_contact_page",cPages.directions.left);
     }
 }
