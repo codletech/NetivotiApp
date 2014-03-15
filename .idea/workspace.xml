@@ -57,7 +57,7 @@
       <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1755">
+            <state line="42" column="59" selection-start="2912" selection-end="2912" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1740">
               <folding />
             </state>
           </provider>
@@ -75,7 +75,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="14" selection-start="2600" selection-end="2600" vertical-scroll-proportion="-13.846154" vertical-offset="1095" max-vertical-offset="1755">
+            <state line="15" column="2" selection-start="232" selection-end="2953" vertical-scroll-proportion="-6.3461537" vertical-offset="60" max-vertical-offset="1755">
               <folding />
             </state>
           </provider>
@@ -84,7 +84,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="3086" selection-end="3086" vertical-scroll-proportion="0.7429907" vertical-offset="273" max-vertical-offset="915">
+            <state line="49" column="74" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.7429907" vertical-offset="258" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -166,8 +166,8 @@
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/galleries_archive_page.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/gallery_page.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/js/PushNotification.js" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/config.xml" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/index.html" />
       </list>
     </option>
@@ -833,23 +833,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="14" selection-start="2600" selection-end="2600" vertical-scroll-proportion="-13.846154" vertical-offset="1095" max-vertical-offset="1755">
+        <state line="42" column="59" selection-start="2912" selection-end="2912" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1740">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/config.xml">
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1755">
+        <state line="15" column="2" selection-start="232" selection-end="2953" vertical-scroll-proportion="-6.3461537" vertical-offset="60" max-vertical-offset="1755">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="3086" selection-end="3086" vertical-scroll-proportion="0.7429907" vertical-offset="273" max-vertical-offset="915">
+        <state line="49" column="74" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.7429907" vertical-offset="258" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
