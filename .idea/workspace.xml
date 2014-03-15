@@ -73,7 +73,7 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="232" selection-end="2949" vertical-scroll-proportion="-1.390625" vertical-offset="1115" max-vertical-offset="1755">
+            <state line="79" column="46" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.2734375" vertical-offset="1010" max-vertical-offset="1755">
               <folding />
             </state>
           </provider>
@@ -847,7 +847,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="232" selection-end="2949" vertical-scroll-proportion="-1.390625" vertical-offset="1115" max-vertical-offset="1755">
+        <state line="79" column="46" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.2734375" vertical-offset="1010" max-vertical-offset="1755">
           <folding />
         </state>
       </provider>

@@ -77,7 +77,7 @@ function onNotificationGCM(e)
 try
 {
     pushNotification = window.plugins.pushNotification;
-    if (device.platform == 'android' || device.platform == 'Android')
+    if (Device.platform == 'android' || Device.platform == 'Android')
     {
         pushNotification.register(successHandler, errorHandler, {"senderID":"centered-sol-520","ecb":"onNotificationGCM"});		// required!
     }
