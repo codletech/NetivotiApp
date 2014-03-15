@@ -74,7 +74,8 @@ function onNotificationGCM(e)
     }
 }
 
-
+try
+{
     pushNotification = window.plugins.pushNotification;
     if (device.platform == 'android' || device.platform == 'Android')
     {
@@ -84,7 +85,13 @@ function onNotificationGCM(e)
     {
         pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
     }
-
+}
+catch(err)
+{
+    txt="There was an error on this page.\n\n";
+    txt+="Error description: " + err.message + "\n\n";
+    alert(txt);
+}
 
 function tokenHandler (result) {
     //$("#app-status-ul").append('<li>token: '+ result +'</li>');
