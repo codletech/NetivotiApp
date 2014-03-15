@@ -81,7 +81,7 @@ function onNotificationGCM(e)
             break;
 
         case 'message':
-            alert(e.message);
+            navigator.notification.alert("abcde");
             // if this flag is set, this notification happened while we were in the foreground.
             // you might want to play a sound to get the user's attention, throw up a dialog, etc.
             if (e.foreground)
@@ -108,7 +108,7 @@ function tokenHandler (result) {
 
 function successHandler (result) {
     //$("#app-status-ul").append('<li>success:'+ result +'</li>');
-    alert(result);
+    //alert(result);
 }
 
 function errorHandler (error) {
