@@ -30,6 +30,16 @@ function getCatNameByID(cat_id, divID)
     xmlhttp.send();
 }
 
+function isAndroid()
+{
+    var ua = navigator.userAgent;
+    if( ua.indexOf("Android") >= 0 )
+    {
+        return true;
+    }
+    return false;
+}
+
 /**
  * Function that gets the div of the ad strip
  * and get random ad from the server
