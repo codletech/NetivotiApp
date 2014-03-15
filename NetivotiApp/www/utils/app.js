@@ -14,6 +14,7 @@ app = {
 };
 function onDeviceReady()
 {
+    alert('dvir hagever');
     var pushNotification;
     try
     {
