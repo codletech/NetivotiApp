@@ -107,6 +107,7 @@ function tokenHandler (result) {
 
 function successHandler (result) {
     //$("#app-status-ul").append('<li>success:'+ result +'</li>');
+    alert(result);
 }
 
 function errorHandler (error) {
