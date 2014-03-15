@@ -17,6 +17,7 @@ app.init();
 
 function initPushwoosh()
 {
+    alert("Tal Levi and Dvir Cohen");
     var pushNotification = window.plugins.pushNotification;
     pushNotification.onDeviceReady();
 
