@@ -12,9 +12,28 @@ app = {
 
 
 };
-
-var pushNotification;
-
+function onDeviceReady()
+{
+    var pushNotification;
+    try
+    {
+        pushNotification = window.plugins.pushNotification;
+        if (isAndroid())
+        {
+            pushNotification.register(successHandler, errorHandler, {"senderID":"centered-sol-520","ecb":"onNotificationGCM"});		// required!
+        }
+        else
+        {
+            pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
+        }
+    }
+    catch(err)
+    {
+        txt="There was an error on this page.\n\n";
+        txt+="Error description: " + err.message + "\n\n";
+        alert(txt);
+    }
+}
 // handle APNS notifications for iOS
 function onNotificationAPN(e)
 {
@@ -74,24 +93,7 @@ function onNotificationGCM(e)
     }
 }
 
-try
-{
-    pushNotification = window.plugins.pushNotification;
-    if (isAndroid())
-    {
-        pushNotification.register(successHandler, errorHandler, {"senderID":"centered-sol-520","ecb":"onNotificationGCM"});		// required!
-    }
-    else
-    {
-        pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
-    }
-}
-catch(err)
-{
-    txt="There was an error on this page.\n\n";
-    txt+="Error description: " + err.message + "\n\n";
-    alert(txt);
-}
+
 
 function tokenHandler (result) {
     //$("#app-status-ul").append('<li>token: '+ result +'</li>');
@@ -108,5 +110,6 @@ function errorHandler (error) {
 }
 
 
+document.addEventListener('deviceready', onDeviceReady, true);
 
 app.init();
