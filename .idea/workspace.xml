@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/index.html" afterPath="$PROJECT_DIR$/NetivotiApp/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NetivotiApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,7 +82,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="74" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.7196262" vertical-offset="273" max-vertical-offset="915">
+            <state line="51" column="0" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.7429907" vertical-offset="288" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -848,7 +847,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="74" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.7196262" vertical-offset="273" max-vertical-offset="915">
+        <state line="51" column="0" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.7429907" vertical-offset="288" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
