@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" afterPath="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/config.xml" afterPath="$PROJECT_DIR$/NetivotiApp/www/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/index.html" afterPath="$PROJECT_DIR$/NetivotiApp/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NetivotiApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +58,7 @@
       <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="4" selection-start="2917" selection-end="2970" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="1755">
+            <state line="44" column="4" selection-start="2975" selection-end="3028" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="1770">
               <folding />
             </state>
           </provider>
@@ -71,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="37" selection-start="379" selection-end="379" vertical-scroll-proportion="-10.961538" vertical-offset="0" max-vertical-offset="735">
+            <state line="48" column="48" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.328125" vertical-offset="510" max-vertical-offset="1755">
               <folding />
             </state>
           </provider>
@@ -83,19 +85,28 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="4" selection-start="3091" selection-end="3161" vertical-scroll-proportion="-19.875" vertical-offset="288" max-vertical-offset="930">
+            <state line="52" column="3" selection-start="3232" selection-end="3293" vertical-scroll-proportion="-20.5" vertical-offset="288" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PushNotification.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PushNotification.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/js/PushNotification.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="0" selection-start="5504" selection-end="5504" vertical-scroll-proportion="0.8198198" vertical-offset="1584" max-vertical-offset="2250">
+            <state line="142" column="0" selection-start="5504" selection-end="5504" vertical-scroll-proportion="-73.42308" vertical-offset="221" max-vertical-offset="2250">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pushwoosh.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NetivotiApp/www/js/pushwoosh.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2145">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,15 +115,6 @@
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/spec.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.333334" vertical-offset="440" max-vertical-offset="1095">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="biz_subcategories.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NetivotiApp/www/pages/biz_subcategories.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="147" selection-start="2611" selection-end="2611" vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -164,10 +166,10 @@
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/direct_contact_page.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/galleries_archive_page.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/pages/gallery_page.js" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/config.xml" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/index.html" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/js/PushNotification.js" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/config.xml" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/index.html" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" />
       </list>
     </option>
   </component>
@@ -554,11 +556,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/js/Swiper/idangerous.swiper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="43" selection-start="386" selection-end="386" vertical-scroll-proportion="-10.887522" vertical-offset="6363" max-vertical-offset="56091" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/responsiveslides.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="819" />
@@ -823,31 +820,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="4" selection-start="2917" selection-end="2970" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="1755">
+        <state line="44" column="4" selection-start="2975" selection-end="3028" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="1770">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/js/pushwoosh.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="37" selection-start="379" selection-end="379" vertical-scroll-proportion="-10.961538" vertical-offset="0" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="4" selection-start="3091" selection-end="3161" vertical-scroll-proportion="-19.875" vertical-offset="288" max-vertical-offset="930">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2145">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/js/PushNotification.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="0" selection-start="5504" selection-end="5504" vertical-scroll-proportion="0.8198198" vertical-offset="1584" max-vertical-offset="2250">
+        <state line="142" column="0" selection-start="5504" selection-end="5504" vertical-scroll-proportion="-73.42308" vertical-offset="221" max-vertical-offset="2250">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="3" selection-start="3232" selection-end="3293" vertical-scroll-proportion="-20.5" vertical-offset="288" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/utils/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="48" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.328125" vertical-offset="510" max-vertical-offset="1755">
+          <folding />
         </state>
       </provider>
     </entry>
