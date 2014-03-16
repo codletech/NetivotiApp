@@ -59,6 +59,7 @@ function onNotificationAPN(e)
 // handle GCM notifications for Android
 function onNotificationGCM(e)
 {
+    navigator.notification.alert(e.payload);
     switch( e.event )
     {
         case 'registered':
