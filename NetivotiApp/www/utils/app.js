@@ -14,7 +14,6 @@ app = {
 };
 function onDeviceReady()
 {
-    //alert('dvir hagever');
     var pushNotification;
     try
     {
@@ -59,7 +58,6 @@ function onNotificationAPN(e)
 // handle GCM notifications for Android
 function onNotificationGCM(e)
 {
-    navigator.notification.alert(e.payload);
     switch( e.event )
     {
         case 'registered':
@@ -82,7 +80,7 @@ function onNotificationGCM(e)
             break;
 
         case 'message':
-            navigator.notification.alert(e.Message);
+            navigator.notification.alert(e.payload);
             // if this flag is set, this notification happened while we were in the foreground.
             // you might want to play a sound to get the user's attention, throw up a dialog, etc.
             if (e.foreground)
