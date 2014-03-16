@@ -12,6 +12,7 @@ app = {
 
 
 };
+
 function onDeviceReady()
 {
     var pushNotification;

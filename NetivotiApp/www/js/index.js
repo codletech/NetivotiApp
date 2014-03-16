@@ -89,7 +89,7 @@ function registerPushwooshAndroid() {
 	//projectid: "GOOGLE_PROJECT_ID", appid : "PUSHWOOSH_APP_ID"
 	pushNotification.registerDevice({ projectid: "179400841357", appid : "94550-3136B" },
 									function(token) {
-										alert(token);
+										//alert(token);
 										//callback when pushwoosh is ready
 										onPushwooshAndroidInitialized(token);
 									},
@@ -195,9 +195,12 @@ function onPushwooshAndroidInitialized(pushToken)
 }
 
 var app = {
+    container: document.getElementById("app_container"),
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+        FastClick.attach(document.body);
+        cPages.moveToPage(this.container,"main","right");
     },
     // Bind Event Listeners
     //
