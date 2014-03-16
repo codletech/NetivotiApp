@@ -32,7 +32,7 @@ function registerPushwooshIOS() {
 				pushNotification.setApplicationIconBadgeNumber(0);
 			  });
 
-	pushNotification.registerDevice({alert:true, badge:true, sound:true, pw_appid:"4F0C807E51EC77.93591449", appname:"Pushwoosh"},
+	pushNotification.registerDevice({alert:true, badge:true, sound:true, pw_appid:"94550-3136B", appname:"Netivot Plus"},
 									function(status) {
 										var deviceToken = status['deviceToken'];
 										console.warn('registerDevice: ' + deviceToken);
@@ -87,7 +87,7 @@ function registerPushwooshAndroid() {
 			  });
 
 	//projectid: "GOOGLE_PROJECT_ID", appid : "PUSHWOOSH_APP_ID"
-	pushNotification.registerDevice({ projectid: "60756016005", appid : "4F0C807E51EC77.93591449" },
+	pushNotification.registerDevice({ projectid: "179400841357", appid : "94550-3136B" },
 									function(token) {
 										alert(token);
 										//callback when pushwoosh is ready
