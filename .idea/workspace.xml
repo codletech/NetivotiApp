@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="" />
+    <list default="true" id="af83885f-5003-4b09-a47c-68eb35229b93" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetivotiApp/www/config.xml" afterPath="$PROJECT_DIR$/NetivotiApp/www/config.xml" />
+    </list>
     <ignored path="NetivotiApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="0" selection-start="7317" selection-end="7317" vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="1770">
+            <state line="49" column="64" selection-start="3323" selection-end="3323" vertical-scroll-proportion="0.6846847" vertical-offset="279" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -82,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="25" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.69072163" vertical-offset="536" max-vertical-offset="1215">
+            <state line="67" column="25" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -168,8 +170,8 @@
         <option value="$PROJECT_DIR$/NetivotiApp/www/utils/app.js" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/index.html" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/config1.xml" />
-        <option value="$PROJECT_DIR$/NetivotiApp/www/config.xml" />
         <option value="$PROJECT_DIR$/NetivotiApp/www/css/index.css" />
+        <option value="$PROJECT_DIR$/NetivotiApp/www/config.xml" />
       </list>
     </option>
   </component>
@@ -849,13 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="0" selection-start="7317" selection-end="7317" vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="1770">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/index1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
@@ -865,7 +860,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NetivotiApp/www/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="25" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.69072163" vertical-offset="536" max-vertical-offset="1215">
+        <state line="67" column="25" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetivotiApp/www/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="64" selection-start="3323" selection-end="3323" vertical-scroll-proportion="0.6846847" vertical-offset="279" max-vertical-offset="1650">
           <folding />
         </state>
       </provider>
