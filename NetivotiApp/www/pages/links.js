@@ -50,6 +50,8 @@ var links_page = {
                         }
                     }
 
+
+
                     document.getElementById('links_main_content').innerHTML = bodyTextToAppend;
 
                     loadAdToStrip('links_footer');
