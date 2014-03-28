@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.codletech.netivoti"
+        id        = "com.codletech.netivotp"
         version   = "1.0.0">
 
     <name>נתיבות פלוס</name>
@@ -61,9 +61,6 @@
     <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" gap:state="hover"/>
     <icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
     <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
-    <icon src="res/icon/ios/76.png"                 gap:platform="ios"        width="76" height="76" />
-    <icon src="res/icon/ios/152.png"                gap:platform="ios"        width="152" height="152" />
-    <icon src="res/icon/ios/120.png"                gap:platform="ios"        width="120" height="120" />
     <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
     <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
     <icon src="res/icon/webos/icon-64.png"          gap:platform="webos" />
