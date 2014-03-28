@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.codletech.netivotp"
-        version   = "1.0.0">
+        version   = "1.0">
 
     <name>נתיבות פלוס</name>
 
@@ -59,7 +59,7 @@
     <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
     <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" />
     <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" gap:state="hover"/>
-    
+
     <icon src="res/icon/ios/icon-76.png"            gap:platform="ios"        width="76" height="76" />
     <icon src="res/icon/ios/icon-152.png"            gap:platform="ios"        width="152" height="152" />
     <icon src="res/icon/ios/icon-120.png"            gap:platform="ios"        width="120" height="120" />
