@@ -126,16 +126,17 @@ function loadMainAD(divID)
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
             var jsonAfterParse = JSON.parse(xmlhttp.responseText);
+            page_ad.style.display = "block";
             page_ad.style.backgroundImage = ' url("'+jsonAfterParse.ad+'")';
             page_ad.style.backgroundSize = "100% 100%";
             page_ad.style.backgroundRepeat = "no-repeat";
-            setTimeout(function(){
-                page_ad.parentNode.removeChild(page_ad);
-                    document.getElementById('menu_button_click_id').click();
-                setTimeout(function(){
-                document.getElementById('menu_button_click_id').click();
-                },100);
-            },4000);
+//            setTimeout(function(){
+//                page_ad.style.display = "none";
+//                    document.getElementById('menu_button_click_id').click();
+//                setTimeout(function(){
+//                document.getElementById('menu_button_click_id').click();
+//                },100);
+//            },4000);
         }
     }
     // open the connection using get method and send it
@@ -143,5 +144,18 @@ function loadMainAD(divID)
     xmlhttp.send();
 }
 
+function close_ad() {
+    var page_ad = document.getElementById('main_ad_netivoti_id');
+    page_ad.style.display = "none";
+}
 
+function refreshLinks() {
+    $(function(){
+        $('a').each(function() {
+            $(this).attr('onclick', 'iframe_page.loadPage(\'' + this.href + '\')' );
+            $(this).attr('href', '#' );
+            $(this).attr('target', '_self');
+        });
+    });
+}
 

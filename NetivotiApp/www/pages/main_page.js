@@ -34,7 +34,7 @@ var mainPageContent =
         {
             var cats_divs = {0:'',1:'',2:'',3:'', 4:'',5:''};
             var zeroOrOne=0;
-            cats_divs[5]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div id=\"galleries_scroller_div\" style='width: 770px; height: 220px;'>";
+            cats_divs[5]+="<div id='galleries_row_scroller' class='galleries_row_wrap'><div style='width: 330px; margin: 0 auto;'>";
             var index = 0;
             //parse the response to json
             var categories_data = JSON.parse(xmlhttp.responseText);
@@ -156,6 +156,7 @@ var mainPageContent =
             app.container.clientHeight;
 
             touchScroll('main_page_content_scroller');
+            refreshLinks();
 
 
             /*cPages.get("main").vars.mainScroll = new IScroll('#main_page_content_scroller',{

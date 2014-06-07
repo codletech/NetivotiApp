@@ -4,6 +4,9 @@
     display: inline-block;
     overflow-y: hidden;
 }
+#main_page_content {
+    background: white;
+}
 #netivoti_main_slider{
 }
 #netivoti_main_slider_content{
@@ -78,15 +81,14 @@
 {
     background: #ffffff;
     border-bottom: 1px solid #C7C7C7;
-    display: inline-block;
-    width: 100%;
+    width: 95%;
     position: relative;
     height: 100px;
     background-repeat: no-repeat !important;
     background-position: 100% , 2% 50%;
     background-size: 100px, 10px;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 .article_wrap:active{
     background-color: #008ed1;
@@ -118,7 +120,7 @@
     margin: 10px;
     height: 170px;
     width: 90px ;
-    float: left;
+    float: right;
 }
 
 .cont_image
@@ -142,16 +144,29 @@
 .galleries_row_wrap
 {
     background: #464646;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    border-bottom: 1px solid #C7C7C7;
+    width: 100%;
+    position: relative;
+    height: 220px;
+    margin: 0;
+    padding: 0;
 }
 .articles_main_title
 {
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     width: 100%;
 }
+
+.article_content_container .articles_main_title
+{
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+}
+
 .main_article_description {
     display: inline-block;
     margin: 0;
@@ -163,6 +178,10 @@
 
 .main_article_rows_container {
     background: #ffffff;
+}
+
+.gallery_content_container .articles_main_title {
+    font-size: 13px;
 }
 
 #news_row
@@ -184,7 +203,6 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    margin-top: 10px;
 }
 
 .page_footer
@@ -282,5 +300,14 @@
     z-index: 100;
     height: 100%;
     width: 100%;
+    position: relative;
+    top: 45px;
+    display: none;
+}
+
+.imagead {
     position: absolute;
+    left: 10px;
+    top: 12px;
+    height: 40px;
 }

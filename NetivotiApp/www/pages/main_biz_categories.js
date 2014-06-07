@@ -40,6 +40,7 @@ var main_biz_categories = {
                     loadAdToStrip('main_biz_footer');
                     touchScroll('biz_cat_page_main_content');
                     cPages.get('main').vars.isMenuPage = 0;
+                    refreshLinks();
                 }
             }
             // open the connection using get method and send it

@@ -45,6 +45,7 @@ var single_subcategory = {
                     loadAdToStrip('single_cat_footer');
                     touchScroll('single_cat_page_main_content');
                     cPages.get('main').vars.isMenuPage = 0;
+                    refreshLinks();
                 }
             }
             // open the connection using get method and send it

@@ -41,6 +41,7 @@ var galleries_archive_page = {
                     loadAdToStrip('galleries_archive_footer');
                     touchScroll('galleries_archive_page_main_content');
                     cPages.get('main').vars.isMenuPage = 0;
+                    refreshLinks();
                 }
             }
             // open the connection using get method and send it

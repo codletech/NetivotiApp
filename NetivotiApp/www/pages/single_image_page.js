@@ -15,6 +15,7 @@ var single_image_page = {
             loadAdToStrip('single_image_footer');
             touchScroll('gallery_page_main_content');
             cPages.get('main').vars.isMenuPage = 0;
+            refreshLinks();
         });
 
         cPages.addPage("single_image_page",single_image_page_content);

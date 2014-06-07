@@ -18,7 +18,9 @@ var article_page = {
                     //parse the response to json
                     var jsonAfterParse = JSON.parse(xmlhttp.responseText);
 
-                    var bodyTextToAppend='<div style="margin-bottom:5px; font-size: 20px;font-weight: bold;border-bottom: 2px solid #3F436F;" id="article_second_title">'+jsonAfterParse.name+'</div>'+
+                    var bodyTextToAppend='<div class="article_title_top" id="article_second_title">'+jsonAfterParse.name+'</div>'+
+                        '<div class="article_excerpt">'+jsonAfterParse.excerpt+'</div>'+
+                        '<div class="article_date">פורסם בתאריך: '+jsonAfterParse.date+'</div>'+
                         '<div class="main_article_content"><img src="'+jsonAfterParse.logo+'" class="articles_img" />'+
                         '<div class="articles_inner_content">'+jsonAfterParse.content+'</div></div>';
                     document.getElementById('article_page_main_content').innerHTML = bodyTextToAppend;
@@ -28,6 +30,7 @@ var article_page = {
                     loadAdToStrip('article_footer');
                     touchScroll('article_page_main_content');
                     cPages.get('main').vars.isMenuPage = 0;
+                    refreshLinks();
                 }
             }
 
@@ -36,7 +39,7 @@ var article_page = {
             xmlhttp.send();
 
         });
-        cPages.addPage("single_article_page",articlesPageContent,articlesInitFunction, touchScroll('article_page_main_content'));
+        cPages.addPage("single_article_page",articlesPageContent,articlesInitFunction, function() { refreshLinks(); touchScroll('article_page_main_content'); });
         cPages.moveToPage(app.container,"single_article_page",cPages.directions.left);
     }
 }

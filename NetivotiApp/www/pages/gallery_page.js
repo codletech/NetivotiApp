@@ -8,7 +8,7 @@ var gallery_page = {
                 viewsFactory.footer({id:"galleries_footer"});
         (function() {
             // api address
-            var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data.php?gallery_id="+gallery_id;
+            var netivotiAPI = "http://www.netivoti.co.il/wp-content/Application/get_data2.php?gallery_id="+gallery_id;
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange=function()
             {
@@ -24,13 +24,14 @@ var gallery_page = {
                     var index;
                     for (index = 0; index < jsonAfterParse.images.length; ++index) {
                         var link = jsonAfterParse.images[index];
-                        bodyTextToAppend+='<img class="gallery_image" src="'+jsonAfterParse.images[index]+'" onclick="single_image_page.loadPage(\''+jsonAfterParse.images[index]+'\' , \''+jsonAfterParse.name+'\');"/>';
+                        bodyTextToAppend+='<img class="gallery_image" src="'+jsonAfterParse.images[index].thumb+'" onclick="single_image_page.loadPage(\''+jsonAfterParse.images[index].original+'\' , \''+jsonAfterParse.name+'\');"/>';
                     }
                     bodyTextToAppend+='</div>';
                     document.getElementById('gallery_page_main_content').innerHTML = bodyTextToAppend;
                     loadAdToStrip('galleries_footer');
                     touchScroll('gallery_page_main_content');
                     cPages.get('main').vars.isMenuPage = 0;
+                    refreshLinks();
                 }
             }
             // open the connection using get method and send it

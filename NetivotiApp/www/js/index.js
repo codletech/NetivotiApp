@@ -194,6 +194,10 @@ function onPushwooshAndroidInitialized(pushToken)
 	}
 }
 
+function onBackKeyDown() {
+    goToMainPage();
+}
+
 var app = {
     container: document.getElementById("app_container"),
     // Application Constructor
@@ -208,6 +212,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener("backbutton", onBackKeyDown, false);
     },
     // deviceready Event Handler
     //

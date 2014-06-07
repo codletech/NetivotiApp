@@ -12,7 +12,8 @@ function showHideSubMenu(id)
 
 function href(link)
 {
-    document.location.href = link;
+    iframe_page.loadPage(link);
+    //document.location.href = link;
 }
 
 function goToMainPage()
@@ -49,7 +50,7 @@ var side_menu = {
             '<div id="side_menu_contact_sub_menu" class="menu_hidden_container">'+
                 '<div class="menu_sub_button side_menu_contact_links" id="call_now_button" onclick="href(\'tel:+0536222833\')">חייג עכשיו</div>'+
                 '<div class="menu_sub_button side_menu_contact_links" id="send_mail_button" onclick="href(\'mailto:NETIVOTP@GMAIL.COM\')">שלח מייל</div>'+
-                '<div class="menu_sub_button side_menu_contact_links" id="facebook_button" onclick=\"href(\'https://www.facebook.com/netivotp\')\">עמוד הפייסבוק שלנו</div>'+
+//                '<div class="menu_sub_button side_menu_contact_links" id="facebook_button" onclick="side_menu.showOrHide(function(){iframe_page.loadPage(\'http://www.facebook.com/netivotp\'); });">face</div>'+
             '</div>'+
             '</div>'+
             '<div id="side_menu_whitespace" style="display:none;" class="side_menu_visible" ontouchstart="side_menu.whiteSpaceTouch();">'+

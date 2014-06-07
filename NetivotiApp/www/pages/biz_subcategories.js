@@ -39,6 +39,7 @@ var biz_subcategories = {
                     loadAdToStrip('biz_subcat_footer');
                     touchScroll('biz_subcat_page_main_content');
                     cPages.get('main').vars.isMenuPage = 0;
+                    refreshLinks();
                 }
             }
             // open the connection using get method and send it

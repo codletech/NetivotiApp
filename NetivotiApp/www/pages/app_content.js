@@ -60,7 +60,7 @@ var app_content_page = {
             touchScroll('app_content_main_content');
             cPages.get('main').vars.isMenuPage = 0;
         });
-        cPages.addPage("app_content_page",app_content_page_contents,app_content_initial_function, touchScroll('app_content_main_content'));
+        cPages.addPage("app_content_page",app_content_page_contents,app_content_initial_function, function() { touchScroll('app_content_main_content'); refreshLinks(); });
         cPages.moveToPage(app.container,"app_content_page",cPages.directions.left);
     }
 }
