@@ -90,9 +90,9 @@
     margin: 0 auto;
     padding: 10px 0;
 }
-.article_wrap:active{
-    background-color: #008ed1;
-}
+/*.article_wrap:active{*/
+    /*background-color: #008ed1;*/
+/*}*/
 
 .ads_wrap
 {

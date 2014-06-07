@@ -196,6 +196,9 @@ function onPushwooshAndroidInitialized(pushToken)
 
 function onBackKeyDown() {
     goToMainPage();
+    if(cPages.get("main").vars.isMenuPage == 1) {
+        navigator.app.exitApp();
+    }
 }
 
 var app = {
